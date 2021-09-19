@@ -10,12 +10,17 @@ def tree(i):
     if i<10:
         return
     else:
-        t.right(15)
+        t.right(20)
         turtle.heading()
         t.forward(15)
+        tree(i/5)
         t.left(20)
+        tree(i/5)
         t.position()
-        t.backward(20)
+        t.backward(15)
+        tree(i/5)
+        t.right(20)
+        tree(i/5)
         print(t.pos())
         t.pencolor("blue")
         while (50-i)>0 and i>0:
