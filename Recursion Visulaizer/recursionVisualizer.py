@@ -5,7 +5,7 @@ from turtle import *
 t = turtle.Turtle()
 num=random.randint(100,1000)
 t.right(num)
-t.speed(num)
+t.speed(100*num)
 t.left(num) 
 def tree(i):
     if i<10:
@@ -14,36 +14,31 @@ def tree(i):
         t.right(20)
         turtle.heading()
         t.forward(15)
-        t.speed(2000)
         while i>0:
          t.pencolor("black")
-         t.circle(5)
+         t.circle(i)
          i-=50
-        i=i+1
-        tree(i) 
+        tree(5) 
         t.left(20)
         while i>0:
          t.pencolor("yellow")
-         t.circle(10)
+         t.circle(i)
          i-=50
-        i=i+1
-        tree(i)
+        tree(5)
         t.position()
         t.backward(15)
         while i>0:
          t.pencolor("black")
-         t.circle(15)
+         t.circle(i)
          i-=50
         t.right(20)
-        i=i+1
-        tree(i)
+        tree(5)
         while i>0:
          t.pencolor("yellow")
-         t.circle(20)
+         t.circle(i)
          tree(i/2)
          i-=50
-        i=i+1
-        tree(i)
+        tree(i/7)
         print(t.pos())
         t.pencolor("blue")
         while (50-i)>0 and i>0:
@@ -220,7 +215,11 @@ val=input("Enter a num:")
 num1=int(val)
 try:
     while num1>0:  
+      t.right(5)
       fractal(num1)
+      t.left(2)
+      tree(num1)
+      t.left(3)
       num1-=5
 except:
  print('Fractal exception') 
