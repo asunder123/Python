@@ -11,7 +11,6 @@ def tree(i):
         return
     else:
         t.right(15)
-        t.tree(15)
         turtle.heading()
         t.forward(15)
         t.left(20)
@@ -197,6 +196,6 @@ try:
       num1-=5
 except:
  print('Fractal exception')
-fractal(num1) 
+tree(30) 
 turtle.done()
 print('Simulation complete')
