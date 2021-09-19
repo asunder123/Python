@@ -18,7 +18,10 @@ def tree(i):
         t.backward(20)
         print(t.pos())
         t.pencolor("blue")
-        t.circle(50-i)
+        while (50-i)>1:
+         t.circle(50-i)
+         i-=1
+        print('Circle with radius',50-i)
         t.position()
         print('shift to blue')
         t.pencolor("green")
@@ -39,7 +42,10 @@ def tree(i):
         print(t.pos())
         t.pos()
         print("shift to red")
-        t.circle(10)
+        while (50-i)>1:
+         t.circle(50-i)
+         i-=1
+        print('Diminishing circle red',10-i)
         t.pos()
         t.backward(num/5)
         t.pencolor("yellow")
@@ -68,9 +74,15 @@ def tree(i):
          t.left(i)
          i-=1
         print('Diminishing circle with radius',10+i)
-        t.circle(10-i)
-        t.backward(i)
-        t.circle(10+i)
+        while (10-i)>1:
+         t.circle(10-i)
+         t.backward(i)
+         i-=1
+        print('Diminishing circle with radius',10+i)
+        while (10+i)>1:
+         t.circle(10+i)
+         i-=1
+        print('Diminishing circle with radius',10+i)
         tree(random.randint(1,num))
         t.forward(num/5)
         t.right(2)
