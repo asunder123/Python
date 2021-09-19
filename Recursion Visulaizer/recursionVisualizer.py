@@ -1,4 +1,5 @@
 import turtle
+
 import random
 from turtle import *
 t = turtle.Turtle()
@@ -16,24 +17,28 @@ def tree(i):
         t.forward(15)
         while i>0:
          t.pencolor("black")
+         t.circle(i)
          tree(i/5)
-         i-=1
+         i-=50
         t.left(20)
         while i>0:
-         t.pencolor("black")
+         t.pencolor("yellow")
+         t.circle(i)
          tree(i/4)
-         i-=1
+         i-=50
         t.position()
         t.backward(15)
         while i>0:
          t.pencolor("black")
+         t.circle(i)
          tree(i/3)
-         i-=1
+         i-=50
         t.right(20)
         while i>0:
-         t.pencolor("black")
+         t.pencolor("yellow")
+         t.circle(i)
          tree(i/2)
-         i-=1
+         i-=50
         print(t.pos())
         t.pencolor("blue")
         while (50-i)>0 and i>0:
