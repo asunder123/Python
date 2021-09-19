@@ -3,7 +3,7 @@ import turtle
 import random
 from turtle import *
 t = turtle.Turtle()
-num=random.randint(100,1000)
+num=random.randint(900,1000)
 t.right(num)
 t.speed(100*num)
 t.left(num) 
@@ -22,20 +22,20 @@ def tree(i):
         t.left(20)
         while i>0:
          t.pencolor("yellow")
-         t.circle(i)
+         t.circle(i*2)
          i-=50
         tree(5)
         t.position()
         t.backward(15)
         while i>0:
          t.pencolor("black")
-         t.circle(i)
+         t.circle(i*3)
          i-=50
         t.right(20)
         tree(5)
         while i>0:
          t.pencolor("yellow")
-         t.circle(i)
+         t.circle(i*4)
          tree(i/2)
          i-=50
         tree(7)
@@ -216,9 +216,9 @@ num1=int(val)
 try:
     while num1>0:  
       t.right(5)
-      fractal(random.randint(num1/2,num1))
+      fractal(random.randint(300,num1))
       t.left(2)
-      tree(random.randint(num1/2,num1))
+      tree(num1)
       t.left(3)
       num1-=5
 except:
