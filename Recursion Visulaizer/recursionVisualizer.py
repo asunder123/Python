@@ -216,11 +216,12 @@ num1=int(val)
 try:
     while num1>0:  
       t.right(5)
-      fractal(random.randint(300,num1))
+      fractal(num1/3)
       t.left(2)
-      tree(num1)
-      t.left(3)
-      num1-=5
+      while num1>0:
+       tree(num1)
+      t.left(num1/5)
+      num1=num1-5
 except:
  print('Fractal exception') 
 turtle.done()
