@@ -18,27 +18,32 @@ def tree(i):
         while i>0:
          t.pencolor("black")
          t.circle(5)
-         tree(i/5)
          i-=50
+        i=i+1
+        tree(i) 
         t.left(20)
         while i>0:
          t.pencolor("yellow")
          t.circle(10)
-         tree(i/4)
          i-=50
+        i=i+1
+        tree(i)
         t.position()
         t.backward(15)
         while i>0:
          t.pencolor("black")
          t.circle(15)
-         tree(i/3)
          i-=50
         t.right(20)
+        i=i+1
+        tree(i)
         while i>0:
          t.pencolor("yellow")
          t.circle(20)
          tree(i/2)
          i-=50
+        i=i+1
+        tree(i)
         print(t.pos())
         t.pencolor("blue")
         while (50-i)>0 and i>0:
