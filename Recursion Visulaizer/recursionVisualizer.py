@@ -38,12 +38,12 @@ def tree(i):
          t.circle(i)
          tree(i/2)
          i-=50
-        tree(i/7)
+        tree(7)
         print(t.pos())
         t.pencolor("blue")
         while (50-i)>0 and i>0:
          if (50-i)>0 and i>0:
-                            tree(5)
+                            tree(i/5)
                             t.circle(50-i)
                             i-=1
                             t.right(i)
@@ -216,9 +216,9 @@ num1=int(val)
 try:
     while num1>0:  
       t.right(5)
-      fractal(num1)
+      fractal(random.randint(num1/2,num1))
       t.left(2)
-      tree(num1)
+      tree(random.randint(num1/2,num1))
       t.left(3)
       num1-=5
 except:
