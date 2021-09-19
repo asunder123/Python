@@ -18,10 +18,20 @@ def tree(i):
         t.backward(20)
         print(t.pos())
         t.pencolor("blue")
-        while (50-i)<2:
-         t.circle(50-i)
-         tree(50-i)
-         i=i-5
+        while (50-i)>0 and i>0:
+         if (50-i)>0 and i>0:
+                            tree(5)
+                            t.circle(50-i)
+                            i-=1
+                            t.right(i)
+                            i=i-1
+                            t.forward(i)
+                            i=i-1
+                            t.left(i)
+                            i=i-1
+                            t.right(i)
+         else:
+             return
         print('Circle with radius',50-i)
         t.position()
         print('shift to blue')
@@ -36,76 +46,88 @@ def tree(i):
         print("shift to green")
         t.pos()
         t.pencolor("red")
-        tree(i*3)
         t.position()
         print(t.pos())
         t.pos()
         print("shift to red")
-        while (50-i)>1:
-         t.circle(random.randint(50-i))
-         i-=10
+        if (50-i)>0 and i>0:
+                           t.circle(50-i)
+                           t.right(i)
+                           t.forward(i)
+                           t.backward(i)
+                           t.left(i)
+                           i-=1
+        else:
+            return 
         print('Diminishing circle red',10-i)
         t.pos()
         t.backward(num/5)
         t.pencolor("yellow")
         print("shift to yellow")
-        tree(random.randint(1,100))
-        tree(random.randint(1,num))
+        tree(num)
         print("End of random tree")
         t.pencolor("blue")
         print('shift to blue')
-        tree(random.randint(1,num/2))
+        t.right(i)
         t.pencolor("green")
         print('shift to green')
         while num>0:
-         tree(num)
-         num-=1
+         if num>0:
+          tree(num)
+          num-=1
+         else:
+             return
         t.pos()
-        while num>0:
-         tree(num/2)
-         num-=1
-        t.pos()
-        t.right(i)
-        while (10-i)>1:
-         t.circle(10-i)
-         t.forward(i)
-         i-=2
+        while num>0 & (num/2) % 2 == 0:
+         tree(num/2) 
+         t.pos()
+         t.right(i)
+        while (10-i)>1 and i>0:
+         if (10-i)>0:
+          t.circle(10-i)
+          t.forward(i)
+          i-=2
+         else:
+          return    
         print('Diminishing circle with radius',10-i)
-        while (10+i)>1:
-         t.circle(10+i)
-         t.left(i)
-         i-=2
+        while (10+i)>0 and i>0:
+         if (10+i)>0:
+          t.circle(10+i)
+          t.left(i)
+          i-=2
+         else:
+          return   
         print('Diminishing circle with radius',10+i)
-        while (10-i)>1:
+        while (10-i)>0 and i>0:
          t.circle(10-i)
          t.backward(i)
          i-=2
         print('Diminishing circle with radius',10+i)
-        while (10+i)>1:
+        while (10+i)>0 and i>0:
          t.circle(10+i)
          i-=2
         print('Diminishing circle with radius',10+i)
         tree(random.randint(1,num))
         t.forward(num/5)
-        while (2+i)>0:
+        while (2+i)>0 and (50-i)>0 and i>0:
          t.right(2+i)
-         t.circle(50)
+         t.circle(50-i)
          i-=1
         t.pencolor("green")
-        while (10+i)>0:
+        while (10+i)>0 and (50-i)>0 and i>0:
          t.left(10+i)
-         t.circle(50)
+         t.circle(50-i)
          i-=1
-        while (10-i)>0:
+        while (10-i)>0 and i>0:
          t.backward(10-i)
          i-=1
-        while (15-i)>0:
+        while (15-i)>0 and (50-i)>0 and i>0:
          t.right(15-i)
-         t.circle(50)
+         t.circle(50-i)
          i-=1
-        while(15-i)>0:
+        while(15-i)>0 and (50-i)>0 and i>0:
          t.forward(15-i)
-         t.circle(50)
+         t.circle(50-i)
          i-=1
         print('tree execution complete')
 
@@ -114,7 +136,7 @@ def cycle(i):
         return 
     else:
         try:
-            tree(random.randint(1,i))
+            tree(i)
         except:
             print('An exception occured')
         else:
@@ -160,8 +182,10 @@ def fractal(i):
 val=input("Enter a num:")
 num1=int(val)
 try:
- fractal(random.randint(1,num1))
+ fractal(num1)
+ cycle(num1)
+ tree(random.randint(1,num1))
 except:
- traceback.print_exec()
+ print('Fractal exception')
 turtle.done()
 print('Simulation complete')
