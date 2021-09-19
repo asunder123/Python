@@ -126,7 +126,6 @@ def fractal(i):
         print('fractal execution complete')
 val=input("Enter a num:")
 num1=int(val)
-tree(num1)
 fractal(random.randint(1,num1))
 turtle.done()
 print('Simulation complete')
