@@ -14,14 +14,26 @@ def tree(i):
         tree(i/6)
         turtle.heading()
         t.forward(15)
-        tree(i/5)
+        while i>0:
+         t.pencolor("black")
+         tree(i/5)
+         i-=1
         t.left(20)
-        tree(i/4)
+        while i>0:
+         t.pencolor("black")
+         tree(i/4)
+         i-=1
         t.position()
         t.backward(15)
-        tree(i/3)
+        while i>0:
+         t.pencolor("black")
+         tree(i/3)
+         i-=1
         t.right(20)
-        tree(i/2)
+        while i>0:
+         t.pencolor("black")
+         tree(i/2)
+         i-=1
         print(t.pos())
         t.pencolor("blue")
         while (50-i)>0 and i>0:
@@ -201,7 +213,6 @@ try:
       fractal(num1)
       num1-=5
 except:
- print('Fractal exception')
-tree(30) 
+ print('Fractal exception') 
 turtle.done()
 print('Simulation complete')
