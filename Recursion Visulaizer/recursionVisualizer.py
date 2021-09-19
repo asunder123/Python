@@ -12,31 +12,31 @@ def tree(i):
         return
     else:
         t.right(20)
-        tree(i/6)
         turtle.heading()
         t.forward(15)
+        t.speed(2000)
         while i>0:
          t.pencolor("black")
-         t.circle(i)
+         t.circle(5)
          tree(i/5)
          i-=50
         t.left(20)
         while i>0:
          t.pencolor("yellow")
-         t.circle(i)
+         t.circle(10)
          tree(i/4)
          i-=50
         t.position()
         t.backward(15)
         while i>0:
          t.pencolor("black")
-         t.circle(i)
+         t.circle(15)
          tree(i/3)
          i-=50
         t.right(20)
         while i>0:
          t.pencolor("yellow")
-         t.circle(i)
+         t.circle(20)
          tree(i/2)
          i-=50
         print(t.pos())
