@@ -18,7 +18,9 @@ def tree(i):
         t.backward(20)
         print(t.pos())
         t.pencolor("blue")
-        t.circle(50)
+        while (50-i)>0:
+         t.circle(50-i)
+         i+=1
         t.position()
         print('shift to blue')
         t.pencolor("green")
@@ -67,7 +69,6 @@ def tree(i):
         t.backward(i)
         t.circle(10+i)
         tree(random.randint(1,num))
-        tree(random.randint(1,100))
         t.forward(num/5)
         t.right(2)
         tree(3*i/4)
