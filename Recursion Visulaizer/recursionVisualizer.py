@@ -18,9 +18,7 @@ def tree(i):
         t.backward(20)
         print(t.pos())
         t.pencolor("blue")
-        while (50-i)>0:
-         t.circle(50-i)
-         i+=1
+        t.circle(50-i)
         t.position()
         print('shift to blue')
         t.pencolor("green")
@@ -36,7 +34,6 @@ def tree(i):
         t.pencolor("green")
         print("shift to green")
         t.pos()
-        tree(3*i/4)
         t.pencolor("red")
         t.position()
         print(t.pos())
@@ -71,10 +68,7 @@ def tree(i):
         tree(random.randint(1,num))
         t.forward(num/5)
         t.right(2)
-        tree(3*i/4)
-        t.right(2)
         t.pencolor("green")
-        t.right(2)
         t.left(10)
         t.backward(10)
         t.right(15)
@@ -100,21 +94,39 @@ def fractal(i):
     else:
         t.pos()
         t.tilt(45)
-        cycle(random.randint(1,i+1))
+        while i>1:
+         cycle(random.randint(1,i+1))
+         i-=1
+        print('Exit loop0')
         t.tilt(45)
-        cycle(random.randint(1,i))
+        while i>1:
+         cycle(random.randint(1,i))
+         print('Execution of loop i',i)
+         i-=1
+        print('Exit loop1')
         t.tilt(45)
-        cycle(random.randint(1,i-1))
+        while (i-1)>1:
+         cycle(random.randint(1,i-1))
+         print('Execution of loop i-1',i-1)
+         i-=1         
+        print('Exit loop2')
         t.tilt(45)
-        cycle(random.randint(1,i-2))
+        while (i-2)>1:
+         cycle(random.randint(1,i-2))
+         print('Execution of loop i-2',i-2)
+         i-=1
+        print('Exit loop3')
         t.tilt(45)
-        t.circle(random.randint(1,i))
+        while (i+1)>1:
+         cycle(randome.randint(1,i+1))
+         print('Execution of loop i+1',i+1)
+         i-=1
+        print('Exit final while loop')
         t.tilt(45)
         print('fractal execution complete')
 val=input("Enter a num:")
 num1=int(val)
 tree(num1)
 fractal(random.randint(1,num1))
-tree(num1)
 turtle.done()
 print('Simulation complete')
