@@ -18,33 +18,32 @@ def tree(i):
         t.backward(20)
         print(t.pos())
         t.pencolor("blue")
-        while (50-i)>1:
+        while (50-i)<2:
          t.circle(50-i)
-         i-=1
+         tree(50-i)
+         i=i-5
         print('Circle with radius',50-i)
         t.position()
         print('shift to blue')
         t.pencolor("green")
-        t.circle(25)
         print('shift to green')
         t.left(2)
         print(t.pos())
-        t.circle(10)
         t.pencolor("red")
-        t.circle(15)
         t.position()
         print('shift to red')
         t.pencolor("green")
         print("shift to green")
         t.pos()
         t.pencolor("red")
+        tree(i*3)
         t.position()
         print(t.pos())
         t.pos()
         print("shift to red")
         while (50-i)>1:
-         t.circle(50-i)
-         i-=1
+         t.circle(random.randint(50-i))
+         i-=10
         print('Diminishing circle red',10-i)
         t.pos()
         t.backward(num/5)
@@ -55,42 +54,59 @@ def tree(i):
         print("End of random tree")
         t.pencolor("blue")
         print('shift to blue')
-        t.circle(40)
         tree(random.randint(1,num/2))
         t.pencolor("green")
         print('shift to green')
-        tree(random.randint(1,num/3))
+        while num>0:
+         tree(num)
+         num-=1
         t.pos()
-        tree(random.randint(1,num/2))
+        while num>0:
+         tree(num/2)
+         num-=1
         t.pos()
         t.right(i)
         while (10-i)>1:
          t.circle(10-i)
          t.forward(i)
-         i-=1
+         i-=2
         print('Diminishing circle with radius',10-i)
         while (10+i)>1:
          t.circle(10+i)
          t.left(i)
-         i-=1
+         i-=2
         print('Diminishing circle with radius',10+i)
         while (10-i)>1:
          t.circle(10-i)
          t.backward(i)
-         i-=1
+         i-=2
         print('Diminishing circle with radius',10+i)
         while (10+i)>1:
          t.circle(10+i)
-         i-=1
+         i-=2
         print('Diminishing circle with radius',10+i)
         tree(random.randint(1,num))
         t.forward(num/5)
-        t.right(2)
+        while (2+i)>0:
+         t.right(2+i)
+         t.circle(50)
+         i-=1
         t.pencolor("green")
-        t.left(10)
-        t.backward(10)
-        t.right(15)
-        t.forward(15)
+        while (10+i)>0:
+         t.left(10+i)
+         t.circle(50)
+         i-=1
+        while (10-i)>0:
+         t.backward(10-i)
+         i-=1
+        while (15-i)>0:
+         t.right(15-i)
+         t.circle(50)
+         i-=1
+        while(15-i)>0:
+         t.forward(15-i)
+         t.circle(50)
+         i-=1
         print('tree execution complete')
 
 def cycle(i):
@@ -99,7 +115,6 @@ def cycle(i):
     else:
         try:
             tree(random.randint(1,i))
-            tree(random.randint(1,i*2))
         except:
             print('An exception occured')
         else:
@@ -114,36 +129,39 @@ def fractal(i):
         t.tilt(45)
         while i>1:
          cycle(random.randint(1,i+1))
-         i-=1
+         i-=5
         print('Exit loop0')
         t.tilt(45)
         while i>1:
          cycle(random.randint(1,i))
          print('Execution of loop i',i)
-         i-=1
+         i-=5
         print('Exit loop1')
         t.tilt(45)
         while (i-1)>1:
          cycle(random.randint(1,i-1))
          print('Execution of loop i-1',i-1)
-         i-=1         
+         i-=5         
         print('Exit loop2')
         t.tilt(45)
         while (i-2)>1:
          cycle(random.randint(1,i-2))
          print('Execution of loop i-2',i-2)
-         i-=1
+         i-=5
         print('Exit loop3')
         t.tilt(45)
         while (i+1)>1:
-         cycle(randome.randint(1,i+1))
+         cycle(random.randint(1,i+1))
          print('Execution of loop i+1',i+1)
-         i-=1
+         i-=5
         print('Exit final while loop')
         t.tilt(45)
         print('fractal execution complete')
 val=input("Enter a num:")
 num1=int(val)
-fractal(random.randint(1,num1))
+try:
+ fractal(random.randint(1,num1))
+except:
+ traceback.print_exec()
 turtle.done()
 print('Simulation complete')
