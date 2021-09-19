@@ -2,7 +2,7 @@ import turtle
 import random
 from turtle import *
 t = turtle.Turtle()
-num=random.randint(1,1000)
+num=random.randint(100,1000)
 t.right(num)
 t.speed(num)
 t.left(num) 
@@ -11,6 +11,7 @@ def tree(i):
         return
     else:
         t.right(15)
+        t.tree(15)
         turtle.heading()
         t.forward(15)
         t.left(20)
@@ -42,9 +43,13 @@ def tree(i):
         t.pencolor("red")
         t.position()
         print('shift to red')
+        t.tree(30)
+        t.circle(30)
         t.pencolor("green")
         print("shift to green")
         t.pos()
+        t.tree(50)
+        t.circle(50)
         t.pencolor("red")
         t.position()
         print(t.pos())
@@ -149,29 +154,34 @@ def fractal(i):
     else:
         t.pos()
         t.tilt(45)
+        t.right(50)
         while i>1:
          cycle(random.randint(1,i+1))
          i-=5
         print('Exit loop0')
         t.tilt(45)
+        t.forward(50)
         while i>1:
          cycle(random.randint(1,i))
          print('Execution of loop i',i)
          i-=5
         print('Exit loop1')
         t.tilt(45)
+        t.left(50)
         while (i-1)>1:
          cycle(random.randint(1,i-1))
          print('Execution of loop i-1',i-1)
          i-=5         
         print('Exit loop2')
         t.tilt(45)
+        t.backward(50)
         while (i-2)>1:
          cycle(random.randint(1,i-2))
          print('Execution of loop i-2',i-2)
          i-=5
         print('Exit loop3')
         t.tilt(45)
+        t.right(50)
         while (i+1)>1:
          cycle(random.randint(1,i+1))
          print('Execution of loop i+1',i+1)
@@ -182,10 +192,11 @@ def fractal(i):
 val=input("Enter a num:")
 num1=int(val)
 try:
- fractal(num1)
- cycle(num1)
- tree(random.randint(1,num1))
+    while num1>0:  
+      fractal(num1)
+      num1-=5
 except:
  print('Fractal exception')
+fractal(num1) 
 turtle.done()
 print('Simulation complete')
