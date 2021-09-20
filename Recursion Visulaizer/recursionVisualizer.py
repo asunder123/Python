@@ -215,13 +215,19 @@ val=input("Enter a num:")
 num1=int(val)
 try:
     while num1>0:  
-      t.right(5)
-      fractal(num1/3)
-      t.left(2)
-      while num1>0:
-       tree(num1)
-      t.left(num1/5)
+      t.right(num1-5)
+      t.backward(num1-5)
+      fractal(num1)
+      t.left(num1-2)
+      t.right(num1-2)
       num1=num1-5
+    while num1>0:
+     t.backward(num1-2)   
+     t.right(num1-2)
+     tree(num1)
+     t.left(num1)
+     t.right(num1)
+     num1=num1-5
 except:
  print('Fractal exception') 
 turtle.done()
