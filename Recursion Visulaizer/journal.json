@@ -14,14 +14,15 @@
       "probes": [
         {
           "type": "probe",
-          "name": "turtle-module",
-          "tolerance": 15,
+          "name": "file-must-exist",
+          "tolerance": true,
+          "timeout": 10,
           "provider": {
             "type": "python",
-            "module": "turtle",
-            "func": "forward",
+            "module": "os.path",
+            "func": "exists",
             "arguments": {
-              "distance": 25
+              "path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
             }
           }
         }
@@ -31,6 +32,21 @@
       {
         "type": "action",
         "name": "test-turtle-forward-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "forward",
+          "arguments": {
+            "distance": 20
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      {
+        "type": "action",
+        "name": "test-turtle-backward-module",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -45,7 +61,7 @@
       },
       {
         "type": "action",
-        "name": "test-turtle-forward-module",
+        "name": "test-turtle-left-module",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -60,7 +76,7 @@
       },
       {
         "type": "action",
-        "name": "test-turtle-forward-module",
+        "name": "test-turtle-right-module",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -74,46 +90,183 @@
         }
       },
       {
-        "ref": "turtle-module"
+        "ref": "file-must-exist"
       }
     ],
     "dry": false
   },
-  "start": "2021-10-08T08:17:41.955826",
-  "status": "failed",
+  "start": "2021-10-08T09:22:35.175742",
+  "status": "completed",
   "deviated": false,
   "steady_states": {
     "before": {
-      "steady_state_met": false,
+      "steady_state_met": true,
       "probes": [
         {
           "activity": {
             "type": "probe",
-            "name": "turtle-module",
-            "tolerance": 15,
+            "name": "file-must-exist",
+            "tolerance": true,
+            "timeout": 10,
             "provider": {
               "type": "python",
-              "module": "turtle",
-              "func": "forward",
+              "module": "os.path",
+              "func": "exists",
               "arguments": {
-                "distance": 25
+                "path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
               }
             }
           },
-          "output": null,
+          "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T08:17:41.956828",
-          "end": "2021-10-08T08:17:42.200360",
-          "duration": 0.243532,
-          "tolerance_met": false
+          "start": "2021-10-08T09:22:35.177133",
+          "end": "2021-10-08T09:22:35.177133",
+          "duration": 0.0,
+          "tolerance_met": true
         }
       ]
     },
-    "after": null,
+    "after": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "file-must-exist",
+            "tolerance": true,
+            "timeout": 10,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
+              }
+            }
+          },
+          "output": true,
+          "status": "succeeded",
+          "start": "2021-10-08T09:23:15.917123",
+          "end": "2021-10-08T09:23:15.925461",
+          "duration": 0.008338,
+          "tolerance_met": true
+        }
+      ]
+    },
     "during": []
   },
-  "run": [],
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "test-turtle-forward-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "forward",
+          "arguments": {
+            "distance": 20
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      "output": null,
+      "status": "succeeded",
+      "start": "2021-10-08T09:22:35.179165",
+      "end": "2021-10-08T09:22:35.555722",
+      "duration": 0.376557
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "test-turtle-backward-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "backward",
+          "arguments": {
+            "distance": 20
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      "output": null,
+      "status": "succeeded",
+      "start": "2021-10-08T09:22:45.559833",
+      "end": "2021-10-08T09:22:45.604910",
+      "duration": 0.045077
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "test-turtle-left-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "left",
+          "arguments": {
+            "angle": 45
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      "output": null,
+      "status": "succeeded",
+      "start": "2021-10-08T09:22:55.610785",
+      "end": "2021-10-08T09:22:55.752628",
+      "duration": 0.141843
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "test-turtle-right-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "right",
+          "arguments": {
+            "angle": 45
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      "output": null,
+      "status": "succeeded",
+      "start": "2021-10-08T09:23:05.760754",
+      "end": "2021-10-08T09:23:05.907137",
+      "duration": 0.146383
+    },
+    {
+      "activity": {
+        "type": "probe",
+        "name": "file-must-exist",
+        "tolerance": true,
+        "timeout": 10,
+        "provider": {
+          "type": "python",
+          "module": "os.path",
+          "func": "exists",
+          "arguments": {
+            "path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
+          }
+        }
+      },
+      "output": true,
+      "status": "succeeded",
+      "start": "2021-10-08T09:23:15.917123",
+      "end": "2021-10-08T09:23:15.917123",
+      "duration": 0.0
+    }
+  ],
   "rollbacks": [],
-  "end": "2021-10-08T08:17:42.201364",
-  "duration": 0.24553799629211426
+  "end": "2021-10-08T09:23:15.925461",
+  "duration": 40.74971914291382
 }

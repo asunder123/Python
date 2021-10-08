@@ -436,3 +436,353 @@
 [36m[2021-10-08 13:47:42 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
 [36m[2021-10-08 13:47:42 DEBUG] [__init__:72][39m Cleaning up controls
 [36m[2021-10-08 13:47:42 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:41:42 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:41:42 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:41:42 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:41:43 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:41:43 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:41:43 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:41:43 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:41:43 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:41:43 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:41:43 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:41:43 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:41:43 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 14:41:43 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 14:41:43 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:41:43 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:41:43 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-10-08 14:41:43 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:41:43 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:41:43 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:41:43 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 14:41:43 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 14:41:43 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 14:41:43 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 14:41:43 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 14:41:43 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:41:43 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 14:41:43 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:41:43 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:41:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:41:43 INFO] [activity:161][39m Probe: turtle-module
+[36m[2021-10-08 14:41:43 DEBUG] [python:34][39m Activity 'turtle-module' loaded from '<string>'
+[36m[2021-10-08 14:41:44 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-08 14:41:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:41:44 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[36m[2021-10-08 14:41:44 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-10-08 14:41:44 CRITICAL] [run:475][39m Steady state probe 'turtle-module' is not in the given tolerance so failing this experiment
+[32m[2021-10-08 14:41:44 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-10-08 14:41:44 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:41:44 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 14:41:44 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:41:59 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:41:59 DEBUG] [cli:104][39m Running command 'validate'
+[36m[2021-10-08 14:41:59 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:42:00 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:42:00 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:42:00 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:42:00 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:42:00 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:42:00 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:42:00 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:42:00 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:42:00 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 14:42:00 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 14:42:00 DEBUG] [caching:42][39m Clearing activities cache
+[32m[2021-10-08 14:42:00 INFO] [cli:309][39m experiment syntax and semantic look valid
+[36m[2021-10-08 14:45:09 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:45:09 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:45:09 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:45:10 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:45:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:45:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:45:10 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:45:10 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:45:10 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:45:10 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:45:10 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:45:10 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:45:10 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 14:45:10 ERROR] [cli:248][39m The python module 'os' does not expose a function called 'exists' in probe 'os-module'
+[36m[2021-10-08 14:45:10 DEBUG] [cli:249][39m The python module 'os' does not expose a function called 'exists' in probe 'os-module'
+[36m[2021-10-08 14:45:47 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:45:47 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:45:47 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:45:47 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:45:47 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:45:47 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:45:47 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:45:47 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:45:47 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:45:47 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:45:47 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:45:47 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:45:47 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 14:45:47 ERROR] [cli:248][39m The python module 'os' does not expose a function called 'exists' in probe 'file-must-exist'
+[36m[2021-10-08 14:45:47 DEBUG] [cli:249][39m The python module 'os' does not expose a function called 'exists' in probe 'file-must-exist'
+[36m[2021-10-08 14:46:26 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:46:26 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:46:26 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:46:27 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:46:27 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:46:27 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:46:27 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:46:27 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:46:27 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:46:27 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:46:27 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:46:27 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:46:27 DEBUG] [caching:88][39m cache miss for 'turtle-module'
+[36m[2021-10-08 14:46:27 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 14:46:27 ERROR] [cli:248][39m referenced activity 'turtle-module' could not be found in the experiment
+[36m[2021-10-08 14:46:27 DEBUG] [cli:249][39m referenced activity 'turtle-module' could not be found in the experiment
+[36m[2021-10-08 14:46:54 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:46:54 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:46:54 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:46:56 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:46:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:46:56 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:46:56 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:46:56 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:46:56 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:46:56 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 14:46:56 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 14:46:56 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:46:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:46:56 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-10-08 14:46:56 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:46:56 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:46:56 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:46:56 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 14:46:56 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 14:46:56 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 14:46:56 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:46:56 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 14:46:56 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:46:56 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:46:56 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:46:56 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:46:56 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 14:46:56 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 14:46:56 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 14:46:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:46:56 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:46:56 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:46:57 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:46:57 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:47:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:47:07 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:47:07 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:47:07 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:47:07 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:47:07 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:47:17 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:47:17 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:47:17 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:47:17 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:47:17 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:47:17 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:47:27 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:47:27 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:47:27 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 14:47:27 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-08 14:47:27 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:47:27 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:47:27 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:47:27 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:47:27 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 14:47:27 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 14:47:27 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 14:47:27 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 14:47:27 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:47:27 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 14:47:27 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:48:25 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:48:25 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:48:25 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:48:26 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:48:26 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:48:26 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 14:48:26 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:48:26 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:48:26 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:48:26 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 14:48:26 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 14:48:26 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:48:26 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:48:26 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-10-08 14:48:26 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:48:26 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:48:26 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:48:26 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 14:48:26 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 14:48:26 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 14:48:26 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:48:26 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 14:48:26 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:48:26 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:48:26 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:48:26 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:48:26 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 14:48:26 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 14:48:26 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 14:48:26 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:48:26 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:48:26 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:48:26 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:48:26 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:48:36 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:48:36 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:48:36 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:48:36 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:48:36 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:48:36 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:48:47 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:48:47 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:48:47 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:48:47 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:48:47 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:48:47 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:48:57 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:48:57 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:48:57 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 14:48:57 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-08 14:48:57 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:48:57 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:48:57 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:48:57 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:48:57 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 14:48:57 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 14:48:57 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 14:48:57 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 14:48:57 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:48:57 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 14:48:57 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:52:33 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 14:52:33 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 14:52:33 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 14:52:34 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 14:52:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:52:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 14:52:34 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:52:34 DEBUG] [caching:35][39m Cached 5 activities
+[32m[2021-10-08 14:52:34 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 14:52:34 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:52:34 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:52:34 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 14:52:35 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 14:52:35 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 14:52:35 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 14:52:35 DEBUG] [caching:35][39m Cached 5 activities
+[36m[2021-10-08 14:52:35 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 14:52:35 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 14:52:35 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 14:52:35 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 14:52:35 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 14:52:35 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 14:52:35 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:52:35 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 14:52:35 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:52:35 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:52:35 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:52:35 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:52:35 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 14:52:35 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 14:52:35 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 14:52:35 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:52:35 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 14:52:35 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 14:52:35 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:52:35 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:52:45 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:52:45 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:52:45 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-08 14:52:45 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-08 14:52:45 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:52:45 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:52:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:52:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:52:55 INFO] [activity:161][39m Action: test-turtle-left-module
+[36m[2021-10-08 14:52:55 DEBUG] [python:34][39m Activity 'test-turtle-left-module' loaded from '<string>'
+[36m[2021-10-08 14:52:55 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:52:55 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:53:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:53:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:53:05 INFO] [activity:161][39m Action: test-turtle-right-module
+[36m[2021-10-08 14:53:05 DEBUG] [python:34][39m Activity 'test-turtle-right-module' loaded from '<string>'
+[36m[2021-10-08 14:53:05 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 14:53:05 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:53:15 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:53:15 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:53:15 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 14:53:15 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-08 14:53:15 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 14:53:15 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 14:53:15 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 14:53:15 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 14:53:15 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 14:53:15 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 14:53:15 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 14:53:15 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 14:53:15 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 14:53:15 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 14:53:15 DEBUG] [caching:42][39m Clearing activities cache

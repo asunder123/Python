@@ -10,23 +10,41 @@
         "probes": [
             {
                 "type": "probe",
-                "name": "turtle-module",
-                "tolerance": 15,
+                "name": "file-must-exist",
+                "tolerance": true,
+		"timeout": 10,
                 "provider": {
                     "type": "python",
-                    "module": "turtle",
-                    "func": "forward",
+                    "module": "os.path",
+                    "func": "exists",
                     "arguments": {
-                        "distance": 25
+                        "path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
+
                     }
                 }
             }
         ]
     },
     "method": [
-        {
+       
+ {
             "type": "action",
             "name": "test-turtle-forward-module",
+            "provider": {
+                "type": "python",
+                "module": "turtle",
+                "func": "forward",
+                "arguments": {
+                    "distance": 20
+                }
+            },
+            "pauses": {
+                "after": 10
+            }
+        },
+	    {
+            "type": "action",
+            "name": "test-turtle-backward-module",
             "provider": {
                 "type": "python",
                 "module": "turtle",
@@ -41,7 +59,7 @@
         },
           {
             "type": "action",
-            "name": "test-turtle-forward-module",
+            "name": "test-turtle-left-module",
             "provider": {
                 "type": "python",
                 "module": "turtle",
@@ -56,7 +74,7 @@
         },
           {
             "type": "action",
-            "name": "test-turtle-forward-module",
+            "name": "test-turtle-right-module",
             "provider": {
                 "type": "python",
                 "module": "turtle",
@@ -70,7 +88,7 @@
             }
         },
         {
-            "ref": "turtle-module"
+            "ref": "file-must-exist"
         }
     ]
 }
