@@ -1,0 +1,89 @@
+{
+  "chaoslib-version": "1.21.0",
+  "platform": "Windows-10-10.0.19042-SP0",
+  "node": "LNAR-5CD9051V6X",
+  "experiment": {
+    "title": "Moving a file from under our feet is forgivable",
+    "description": "Our application should re-create a file that was removed",
+    "contributions": {
+      "reliability": "high",
+      "availability": "high"
+    },
+    "steady-state-hypothesis": {
+      "title": "The file must be around first",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "turtle-module",
+          "tolerance": 15,
+          "provider": {
+            "type": "python",
+            "module": "turtle",
+            "func": "forward",
+            "arguments": {
+              "distance": 25
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "test-turtle-forward-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "backward",
+          "arguments": {
+            "distance": 20
+          }
+        },
+        "pauses": {
+          "after": 5
+        }
+      },
+      {
+        "ref": "turtle-module"
+      }
+    ],
+    "dry": false
+  },
+  "start": "2021-10-08T08:02:31.396660",
+  "status": "failed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "turtle-module",
+            "tolerance": 15,
+            "provider": {
+              "type": "python",
+              "module": "turtle",
+              "func": "forward",
+              "arguments": {
+                "distance": 25
+              }
+            }
+          },
+          "output": null,
+          "status": "succeeded",
+          "start": "2021-10-08T08:02:31.397702",
+          "end": "2021-10-08T08:02:31.641145",
+          "duration": 0.243443,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2021-10-08T08:02:31.642192",
+  "duration": 0.24553179740905762
+}

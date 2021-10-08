@@ -1,0 +1,208 @@
+[36m[2021-09-20 22:45:57 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:45:57 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-09-20 22:45:57 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-09-20 22:45:59 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-09-20 22:45:59 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-20 22:45:59 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[31m[2021-09-20 22:45:59 ERROR] [cli:238][39m Path "recusrion*" does not exist.
+[36m[2021-09-20 22:45:59 DEBUG] [cli:239][39m Path "recusrion*" does not exist.
+[36m[2021-09-20 22:46:13 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:46:13 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-09-20 22:46:13 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-09-20 22:46:14 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-09-20 22:46:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-20 22:46:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[31m[2021-09-20 22:46:14 ERROR] [cli:238][39m Path "recusrionVisualizer.py" does not exist.
+[36m[2021-09-20 22:46:14 DEBUG] [cli:239][39m Path "recusrionVisualizer.py" does not exist.
+[36m[2021-09-20 22:46:31 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:46:31 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-09-20 22:46:31 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-09-20 22:46:32 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-09-20 22:46:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-20 22:46:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-20 22:48:34 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:48:34 DEBUG] [cli:104][39m Running command 'info'
+[36m[2021-09-20 22:48:34 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-09-20 22:48:43 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:48:43 DEBUG] [cli:104][39m Running command 'info'
+[36m[2021-09-20 22:48:43 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-09-20 22:48:57 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:48:57 DEBUG] [cli:104][39m Running command 'info'
+[36m[2021-09-20 22:48:57 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-09-20 22:49:53 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-20 22:49:53 DEBUG] [cli:104][39m Running command 'info'
+[36m[2021-09-20 22:49:53 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 12:30:40 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 12:30:40 DEBUG] [cli:104][39m Running command 'discover'
+[36m[2021-10-08 12:30:40 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 12:30:41 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 12:30:41 DEBUG] [cli:536][39m Failed to discover cookiecutter-chaostoolkit
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\package.py", line 99, in get_importname_from_package
+        dist = importlib_metadata.distribution(package_name)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\importlib\metadata.py", line 524, in distribution
+        return Distribution.from_name(distribution_name)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\importlib\metadata.py", line 187, in from_name
+        raise PackageNotFoundError(name)
+    importlib.metadata.PackageNotFoundError: cookiecutter-chaostoolkit
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostoolkit\cli.py", line 529, in discover
+        discovery = disco(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\discover.py", line 33, in discover
+        package = load_package(package_name)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\package.py", line 47, in load_package
+        name = get_importname_from_package(package_name)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\package.py", line 101, in get_importname_from_package
+        raise DiscoveryFailed(
+    chaoslib.exceptions.DiscoveryFailed: Package cookiecutter-chaostoolkit not found 
+[31m[2021-10-08 12:30:41 CRITICAL] [cli:537][39m Package cookiecutter-chaostoolkit not found 
+[36m[2021-10-08 12:30:50 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 12:30:50 DEBUG] [cli:104][39m Running command 'discover'
+[36m[2021-10-08 12:30:50 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 12:30:51 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 12:30:51 DEBUG] [cli:536][39m Failed to discover cookiecutter
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\package.py", line 99, in get_importname_from_package
+        dist = importlib_metadata.distribution(package_name)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\importlib\metadata.py", line 524, in distribution
+        return Distribution.from_name(distribution_name)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\importlib\metadata.py", line 187, in from_name
+        raise PackageNotFoundError(name)
+    importlib.metadata.PackageNotFoundError: cookiecutter
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostoolkit\cli.py", line 529, in discover
+        discovery = disco(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\discover.py", line 33, in discover
+        package = load_package(package_name)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\package.py", line 47, in load_package
+        name = get_importname_from_package(package_name)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\discovery\package.py", line 101, in get_importname_from_package
+        raise DiscoveryFailed(
+    chaoslib.exceptions.DiscoveryFailed: Package cookiecutter not found 
+[31m[2021-10-08 12:30:51 CRITICAL] [cli:537][39m Package cookiecutter not found 
+[36m[2021-10-08 13:31:44 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 13:31:44 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 13:31:44 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 13:31:45 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 13:31:45 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 13:31:45 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 13:31:45 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 13:31:45 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 13:31:45 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 13:31:45 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 13:31:45 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 13:31:45 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 13:31:45 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 13:31:45 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-10-08 13:31:45 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 13:31:45 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 13:31:45 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 13:31:45 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 13:31:45 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 13:31:45 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 13:31:45 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 13:31:45 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 13:31:45 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 13:31:45 INFO] [activity:161][39m Probe: turtle-module
+[36m[2021-10-08 13:31:45 DEBUG] [python:34][39m Activity 'turtle-module' loaded from '<string>'
+[36m[2021-10-08 13:31:45 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 13:31:45 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-10-08 13:31:45 CRITICAL] [run:475][39m Steady state probe 'turtle-module' is not in the given tolerance so failing this experiment
+[32m[2021-10-08 13:31:45 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 13:31:45 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 13:31:45 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 13:32:16 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 13:32:16 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 13:32:16 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 13:32:18 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 13:32:18 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 13:32:18 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 13:32:18 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 13:32:18 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 13:32:18 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 13:32:18 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 13:32:18 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 13:32:18 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 13:32:18 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 13:32:18 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-10-08 13:32:18 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 13:32:18 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 13:32:18 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 13:32:18 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 13:32:18 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 13:32:18 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 13:32:18 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 13:32:18 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 13:32:18 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 13:32:18 INFO] [activity:161][39m Probe: turtle-module
+[36m[2021-10-08 13:32:18 DEBUG] [python:34][39m Activity 'turtle-module' loaded from '<string>'
+[36m[2021-10-08 13:32:18 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 13:32:18 DEBUG] [hypothesis:211][39m allowed tolerance is OK
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-10-08 13:32:18 CRITICAL] [run:475][39m Steady state probe 'turtle-module' is not in the given tolerance so failing this experiment
+[32m[2021-10-08 13:32:18 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 13:32:18 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 13:32:18 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 13:32:30 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 13:32:30 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 13:32:30 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 13:32:31 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 13:32:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 13:32:31 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-10-08 13:32:31 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 13:32:31 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 13:32:31 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 13:32:31 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 13:32:31 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 13:32:31 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 13:32:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 13:32:31 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-10-08 13:32:31 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 13:32:31 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 13:32:31 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 13:32:31 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 13:32:31 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 13:32:31 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 13:32:31 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 13:32:31 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 13:32:31 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 13:32:31 INFO] [activity:161][39m Probe: turtle-module
+[36m[2021-10-08 13:32:31 DEBUG] [python:34][39m Activity 'turtle-module' loaded from '<string>'
+[36m[2021-10-08 13:32:31 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 13:32:31 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-10-08 13:32:31 CRITICAL] [run:475][39m Steady state probe 'turtle-module' is not in the given tolerance so failing this experiment
+[32m[2021-10-08 13:32:31 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 13:32:31 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 13:32:31 DEBUG] [caching:42][39m Clearing activities cache
