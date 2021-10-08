@@ -40,7 +40,37 @@
           }
         },
         "pauses": {
-          "after": 5
+          "after": 10
+        }
+      },
+      {
+        "type": "action",
+        "name": "test-turtle-forward-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "left",
+          "arguments": {
+            "angle": 45
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      {
+        "type": "action",
+        "name": "test-turtle-forward-module",
+        "provider": {
+          "type": "python",
+          "module": "turtle",
+          "func": "right",
+          "arguments": {
+            "angle": 45
+          }
+        },
+        "pauses": {
+          "after": 10
         }
       },
       {
@@ -49,7 +79,7 @@
     ],
     "dry": false
   },
-  "start": "2021-10-08T08:02:31.396660",
+  "start": "2021-10-08T08:17:41.955826",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -72,9 +102,9 @@
           },
           "output": null,
           "status": "succeeded",
-          "start": "2021-10-08T08:02:31.397702",
-          "end": "2021-10-08T08:02:31.641145",
-          "duration": 0.243443,
+          "start": "2021-10-08T08:17:41.956828",
+          "end": "2021-10-08T08:17:42.200360",
+          "duration": 0.243532,
           "tolerance_met": false
         }
       ]
@@ -84,6 +114,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-10-08T08:02:31.642192",
-  "duration": 0.24553179740905762
+  "end": "2021-10-08T08:17:42.201364",
+  "duration": 0.24553799629211426
 }

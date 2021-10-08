@@ -36,7 +36,37 @@
                 }
             },
             "pauses": {
-                "after": 5
+                "after": 10
+            }
+        },
+          {
+            "type": "action",
+            "name": "test-turtle-forward-module",
+            "provider": {
+                "type": "python",
+                "module": "turtle",
+                "func": "left",
+                "arguments": {
+		    "angle" : 45
+                }
+            },
+            "pauses": {
+                "after": 10
+            }
+        },
+          {
+            "type": "action",
+            "name": "test-turtle-forward-module",
+            "provider": {
+                "type": "python",
+                "module": "turtle",
+                "func": "right",
+                "arguments": {
+                    "angle": 45
+                }
+            },
+            "pauses": {
+                "after": 10
             }
         },
         {
