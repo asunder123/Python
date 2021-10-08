@@ -107,7 +107,7 @@
     ],
     "dry": false
   },
-  "start": "2021-10-08T10:18:40.180292",
+  "start": "2021-10-08T10:23:31.258087",
   "status": "completed",
   "deviated": false,
   "steady_states": {
@@ -131,9 +131,9 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T10:18:40.181294",
-          "end": "2021-10-08T10:18:40.182328",
-          "duration": 0.001034,
+          "start": "2021-10-08T10:23:31.258087",
+          "end": "2021-10-08T10:23:31.258087",
+          "duration": 0.0,
           "tolerance_met": true
         }
       ]
@@ -158,9 +158,9 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T10:19:20.772785",
-          "end": "2021-10-08T10:19:20.781364",
-          "duration": 0.008579,
+          "start": "2021-10-08T10:24:12.217895",
+          "end": "2021-10-08T10:24:12.219117",
+          "duration": 0.001222,
           "tolerance_met": true
         }
       ]
@@ -196,9 +196,9 @@
         "\nDuring handling of the above exception, another exception occurred:\n\n",
         "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
       ],
-      "start": "2021-10-08T10:18:40.182736",
-      "end": "2021-10-08T10:18:40.187242",
-      "duration": 0.004506
+      "start": "2021-10-08T10:23:31.258087",
+      "end": "2021-10-08T10:23:31.265070",
+      "duration": 0.006983
     },
     {
       "activity": {
@@ -218,9 +218,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T10:18:40.187242",
-      "end": "2021-10-08T10:18:40.436482",
-      "duration": 0.24924
+      "start": "2021-10-08T10:23:31.266048",
+      "end": "2021-10-08T10:23:31.513565",
+      "duration": 0.247517
     },
     {
       "activity": {
@@ -239,10 +239,28 @@
         }
       },
       "output": null,
-      "status": "succeeded",
-      "start": "2021-10-08T10:18:50.441633",
-      "end": "2021-10-08T10:18:50.479912",
-      "duration": 0.038279
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"<string>\", line 8, in backward\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1658, in back\n    self._go(-distance)\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1606, in _go\n    self._goto(ende)\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3182, in _goto\n    screen._drawline(self.drawingLineItem, ((0, 0), (0, 0)),\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 544, in _drawline\n    self.cv.coords(lineitem, *cl)\n",
+        "  File \"<string>\", line 1, in coords\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\tkinter\\__init__.py\", line 2766, in coords\n    self.tk.call((self._w, 'coords') + args))]\n",
+        "_tkinter.TclError: invalid command name \".!canvas\"\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"<string>\", line 12, in backward\n",
+        "turtle.Terminator\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
+      ],
+      "start": "2021-10-08T10:23:41.525191",
+      "end": "2021-10-08T10:23:41.666651",
+      "duration": 0.14146
     },
     {
       "activity": {
@@ -262,9 +280,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T10:19:00.495581",
-      "end": "2021-10-08T10:19:00.623012",
-      "duration": 0.127431
+      "start": "2021-10-08T10:23:51.674984",
+      "end": "2021-10-08T10:23:52.053284",
+      "duration": 0.3783
     },
     {
       "activity": {
@@ -284,9 +302,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T10:19:10.625246",
-      "end": "2021-10-08T10:19:10.760889",
-      "duration": 0.135643
+      "start": "2021-10-08T10:24:02.063566",
+      "end": "2021-10-08T10:24:02.200981",
+      "duration": 0.137415
     },
     {
       "activity": {
@@ -305,12 +323,12 @@
       },
       "output": true,
       "status": "succeeded",
-      "start": "2021-10-08T10:19:20.772785",
-      "end": "2021-10-08T10:19:20.772785",
-      "duration": 0.0
+      "start": "2021-10-08T10:24:12.211815",
+      "end": "2021-10-08T10:24:12.215359",
+      "duration": 0.003544
     }
   ],
   "rollbacks": [],
-  "end": "2021-10-08T10:19:20.782426",
-  "duration": 40.60213327407837
+  "end": "2021-10-08T10:24:12.222080",
+  "duration": 40.963993549346924
 }

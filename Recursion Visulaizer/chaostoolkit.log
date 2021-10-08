@@ -1156,3 +1156,302 @@
 [36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
 [36m[2021-10-08 15:49:20 DEBUG] [__init__:72][39m Cleaning up controls
 [36m[2021-10-08 15:49:20 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:52:01 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:52:01 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:52:01 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:52:03 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:52:03 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:52:03 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:52:03 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:52:03 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:52:03 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:52:03 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:52:03 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:52:03 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 15:52:15 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 15:52:15 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:52:15 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:52:15 DEBUG] [caching:35][39m Cached 6 activities
+[36m[2021-10-08 15:52:15 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:52:15 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:52:15 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:52:15 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 15:52:15 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 15:52:15 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 15:52:15 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 15:52:15 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 15:52:15 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:15 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:52:15 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:52:15 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:15 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 15:52:15 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 15:52:15 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:15 INFO] [activity:161][39m Action: test-tree
+[36m[2021-10-08 15:52:15 DEBUG] [python:34][39m Activity 'test-tree' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py'
+[36m[2021-10-08 15:52:15 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py", line 24, in tree
+        t.right(20)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py", line 24, in tree
+        t.right(20)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-10-08 15:52:15 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:15 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:15 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 15:52:15 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 15:52:16 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:52:16 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:52:26 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:26 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:26 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-08 15:52:26 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-08 15:52:26 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:52:26 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:52:36 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:36 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:36 INFO] [activity:161][39m Action: test-turtle-left-module
+[36m[2021-10-08 15:52:36 DEBUG] [python:34][39m Activity 'test-turtle-left-module' loaded from '<string>'
+[36m[2021-10-08 15:52:36 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:52:36 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:52:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:46 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:46 INFO] [activity:161][39m Action: test-turtle-right-module
+[36m[2021-10-08 15:52:46 DEBUG] [python:34][39m Activity 'test-turtle-right-module' loaded from '<string>'
+[36m[2021-10-08 15:52:46 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:52:46 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:56 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:52:56 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:52:56 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 15:52:56 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-08 15:52:56 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:52:56 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:52:56 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:52:56 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:52:56 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 15:52:56 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 15:52:56 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 15:52:56 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 15:52:56 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 15:52:56 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 15:52:56 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:53:09 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:53:09 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:53:09 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:53:10 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:53:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:53:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:53:10 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:53:10 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:53:10 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:53:10 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:53:10 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:53:10 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 15:53:31 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 15:53:31 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:53:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:53:31 DEBUG] [caching:35][39m Cached 6 activities
+[36m[2021-10-08 15:53:31 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:53:31 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:53:31 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:53:31 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 15:53:31 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 15:53:31 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 15:53:31 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 15:53:31 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 15:53:31 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:53:31 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:53:31 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:53:31 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:53:31 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 15:53:31 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 15:53:31 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:53:31 INFO] [activity:161][39m Action: test-tree
+[36m[2021-10-08 15:53:31 DEBUG] [python:34][39m Activity 'test-tree' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py'
+[36m[2021-10-08 15:53:31 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py", line 24, in tree
+        t.right(20)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py", line 24, in tree
+        t.right(20)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-10-08 15:53:31 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:53:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:53:31 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 15:53:31 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 15:53:31 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:53:31 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:53:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:53:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:53:41 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-08 15:53:41 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-08 15:53:41 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "<string>", line 8, in backward
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1658, in back
+        self._go(-distance)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1606, in _go
+        self._goto(ende)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3182, in _goto
+        screen._drawline(self.drawingLineItem, ((0, 0), (0, 0)),
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 544, in _drawline
+        self.cv.coords(lineitem, *cl)
+      File "<string>", line 1, in coords
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\tkinter\__init__.py", line 2766, in coords
+        self.tk.call((self._w, 'coords') + args))]
+    _tkinter.TclError: invalid command name ".!canvas"
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 12, in backward
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 12, in backward
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-10-08 15:53:41 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[32m[2021-10-08 15:53:41 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:53:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:53:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:53:51 INFO] [activity:161][39m Action: test-turtle-left-module
+[36m[2021-10-08 15:53:51 DEBUG] [python:34][39m Activity 'test-turtle-left-module' loaded from '<string>'
+[36m[2021-10-08 15:53:52 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:53:52 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:54:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:54:02 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:54:02 INFO] [activity:161][39m Action: test-turtle-right-module
+[36m[2021-10-08 15:54:02 DEBUG] [python:34][39m Activity 'test-turtle-right-module' loaded from '<string>'
+[36m[2021-10-08 15:54:02 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:54:02 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:54:12 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:54:12 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:54:12 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 15:54:12 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-08 15:54:12 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:54:12 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:54:12 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:54:12 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:54:12 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 15:54:12 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 15:54:12 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 15:54:12 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 15:54:12 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 15:54:12 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 15:54:12 DEBUG] [caching:42][39m Clearing activities cache
