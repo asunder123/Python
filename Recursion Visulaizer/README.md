@@ -7,5 +7,9 @@ Once Function is Tested , Individual Modules are tested for and switch shows up 
 
 ![image](https://user-images.githubusercontent.com/50335583/136541009-d6910a5a-2460-4af1-8d6c-c8c48a6a6f1a.png)
 
+Inherent problem within during termination of a turtle module invocation or execution : 
+![image](https://user-images.githubusercontent.com/50335583/136541408-0565c7d3-30bc-43b5-9cc4-921d9c689ef0.png)
+
+
 
 
