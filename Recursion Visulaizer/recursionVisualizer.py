@@ -1,13 +1,23 @@
+import importlib
+import inspect
+import sys
+import traceback
 import turtle
-
 import random
+from typing import Any
+from logzero import logger 
+from chaoslib.types import Configuration, Secrets,Activity
+from chaoslib.exceptions import ActivityFailed, InvalidActivity
 from turtle import *
+
+__all__ = ["run_python_activity", "cycle"]
 t = turtle.Turtle()
 num=random.randint(900,1000)
 t.right(num)
 t.speed(100*num)
 t.left(num) 
-def tree(i):
+
+def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
     if i<10:
         return
     else:
@@ -157,6 +167,7 @@ def tree(i):
          t.circle(50-i)
          i-=1
         print('tree execution complete')
+        pass
 
 def cycle(i):
     if i<10:

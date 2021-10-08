@@ -786,3 +786,373 @@
 [36m[2021-10-08 14:53:15 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
 [36m[2021-10-08 14:53:15 DEBUG] [__init__:72][39m Cleaning up controls
 [36m[2021-10-08 14:53:15 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:13:40 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:13:40 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:13:40 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:13:41 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:13:41 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:13:41 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:13:41 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:13:41 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:13:41 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:13:41 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:13:41 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:13:41 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:13:41 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:13:41 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'test-tree-function'
+[36m[2021-10-08 15:13:41 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'test-tree-function'
+[36m[2021-10-08 15:14:05 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:14:05 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:14:05 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:14:06 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:14:06 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:14:06 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:14:06 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:14:06 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:14:06 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:14:06 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:14:06 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:14:06 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:14:06 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:14:06 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'test-tree-function'
+[36m[2021-10-08 15:14:06 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'test-tree-function'
+[36m[2021-10-08 15:14:31 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:14:31 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:14:31 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:14:32 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:14:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:14:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:14:32 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:14:32 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:14:32 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:14:32 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:14:32 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:14:32 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:14:32 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:14:32 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:14:32 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:24:39 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:24:39 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:24:39 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:24:41 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:24:41 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:24:41 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:24:41 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:24:41 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:24:41 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:24:41 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:24:41 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:24:41 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:24:41 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:24:41 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:24:41 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:26:47 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:26:47 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:26:47 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:26:48 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:26:48 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:26:48 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:26:48 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:26:48 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:26:48 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:26:48 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:26:48 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:26:48 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:26:48 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:26:48 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:26:48 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:32:27 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:32:27 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:32:27 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:32:28 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:32:28 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:32:28 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:32:28 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:32:28 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:32:28 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:32:28 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:32:28 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:32:28 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:32:28 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:32:28 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:32:28 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:34:03 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:34:03 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:34:03 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:34:05 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:34:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:34:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:34:05 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:34:05 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:34:05 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:34:05 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:34:05 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:34:05 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:34:05 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:34:05 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'run-python-activity'
+[36m[2021-10-08 15:34:05 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'run-python-activity'
+[36m[2021-10-08 15:38:11 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:38:11 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:38:11 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:38:13 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:38:13 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:38:13 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:38:13 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:38:13 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:38:13 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:38:13 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:38:13 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:38:13 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:38:13 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:38:13 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'run-python-activity'
+[36m[2021-10-08 15:38:13 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'run-python-activity'
+[36m[2021-10-08 15:39:17 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:39:17 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:39:17 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:39:18 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:39:18 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:39:18 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:39:18 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:39:18 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:39:18 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:39:18 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:39:18 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:39:18 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:39:18 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:39:18 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:39:18 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'tree'
+[36m[2021-10-08 15:39:55 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:39:55 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:39:55 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:39:56 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:39:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:39:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:39:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:39:56 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:39:56 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:39:56 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:39:56 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:39:56 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:39:56 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:39:56 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'test-tree'
+[36m[2021-10-08 15:39:56 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'test-tree'
+[36m[2021-10-08 15:40:06 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:40:06 DEBUG] [cli:104][39m Running command 'validate'
+[36m[2021-10-08 15:40:06 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:40:07 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:40:07 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:40:07 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:40:07 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:40:07 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:40:07 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:40:07 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:40:07 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:40:07 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:40:07 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:40:07 ERROR] [cli:312][39m could not find Python module 'recursionVisualizer' in activity 'test-tree'
+[36m[2021-10-08 15:40:07 DEBUG] [cli:313][39m could not find Python module 'recursionVisualizer' in activity 'test-tree'
+[36m[2021-10-08 15:40:18 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:40:18 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:40:18 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:40:19 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:40:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:40:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:40:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:40:19 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:40:19 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:40:19 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:40:19 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:40:19 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:40:19 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:40:19 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'test-tree'
+[36m[2021-10-08 15:40:19 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'test-tree'
+[36m[2021-10-08 15:40:41 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:40:41 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:40:41 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:40:43 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:40:43 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:40:43 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:40:43 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:40:43 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:40:43 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:40:43 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:40:43 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:40:43 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:40:43 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:40:43 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer.py' in activity 'test-tree'
+[36m[2021-10-08 15:40:43 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer.py' in activity 'test-tree'
+[36m[2021-10-08 15:42:50 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:42:50 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:42:50 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:42:51 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:42:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:42:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:42:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:42:51 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:42:51 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:42:51 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:42:51 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:42:51 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:44:52 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:46:08 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:46:08 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:46:08 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:46:10 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:46:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:46:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:46:10 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:46:10 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:46:10 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:46:10 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:46:10 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:46:10 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:46:10 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:46:10 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer.py' in activity 'test-tree'
+[36m[2021-10-08 15:46:10 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer.py' in activity 'test-tree'
+[36m[2021-10-08 15:46:43 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:46:43 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:46:43 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:46:44 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:46:44 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:46:44 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:46:44 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:46:44 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:46:44 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:46:44 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:46:44 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:46:44 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:46:57 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2021-10-08 15:46:57 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer.py' in activity 'test-tree'
+[36m[2021-10-08 15:46:57 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer.py' in activity 'test-tree'
+[36m[2021-10-08 15:48:27 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-08 15:48:27 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-08 15:48:27 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-08 15:48:28 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\asunder\.chaostoolkit\settings.yaml'.
+[36m[2021-10-08 15:48:28 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:48:28 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-08 15:48:28 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:48:28 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2021-10-08 15:48:28 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-08 15:48:28 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:48:28 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:48:28 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-10-08 15:48:39 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-08 15:48:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-08 15:48:39 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-08 15:48:39 DEBUG] [caching:35][39m Cached 6 activities
+[36m[2021-10-08 15:48:39 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-08 15:48:39 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-08 15:48:39 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-08 15:48:40 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-08 15:48:40 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-10-08 15:48:40 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-08 15:48:40 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 15:48:40 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-08 15:48:40 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:48:40 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:48:40 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:48:40 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:48:40 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 15:48:40 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 15:48:40 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:48:40 INFO] [activity:161][39m Action: test-tree
+[36m[2021-10-08 15:48:40 DEBUG] [python:34][39m Activity 'test-tree' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py'
+[36m[2021-10-08 15:48:40 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py", line 24, in tree
+        t.right(20)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\recursionVisualizer.py", line 24, in tree
+        t.right(20)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-10-08 15:48:40 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:48:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:48:40 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-08 15:48:40 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-08 15:48:40 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:48:40 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:48:50 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:48:50 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:48:50 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-08 15:48:50 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-08 15:48:50 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:48:50 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:49:00 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:49:00 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:49:00 INFO] [activity:161][39m Action: test-turtle-left-module
+[36m[2021-10-08 15:49:00 DEBUG] [python:34][39m Activity 'test-turtle-left-module' loaded from '<string>'
+[36m[2021-10-08 15:49:00 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:49:00 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:49:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:49:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:49:10 INFO] [activity:161][39m Action: test-turtle-right-module
+[36m[2021-10-08 15:49:10 DEBUG] [python:34][39m Activity 'test-turtle-right-module' loaded from '<string>'
+[36m[2021-10-08 15:49:10 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-08 15:49:10 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:49:20 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:49:20 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:49:20 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-10-08 15:49:20 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-08 15:49:20 INFO] [hypothesis:183][39m Steady state hypothesis: The file must be around first
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-10-08 15:49:20 INFO] [activity:161][39m Probe: file-must-exist
+[36m[2021-10-08 15:49:20 DEBUG] [python:34][39m Activity 'file-must-exist' loaded from 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\genericpath.py'
+[36m[2021-10-08 15:49:20 DEBUG] [activity:180][39m   => succeeded with 'True'
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-10-08 15:49:20 DEBUG] [hypothesis:211][39m allowed tolerance is True
+[32m[2021-10-08 15:49:20 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-10-08 15:49:20 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 15:49:20 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-10-08 15:49:20 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-10-08 15:49:20 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-08 15:49:20 DEBUG] [caching:42][39m Clearing activities cache

@@ -30,6 +30,18 @@
     },
     "method": [
       {
+        "name": "test-tree",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "recursionVisualizer",
+          "func": "tree",
+          "arguments": {
+            "i": 100
+          }
+        }
+      },
+      {
         "type": "action",
         "name": "test-turtle-forward-module",
         "provider": {
@@ -95,7 +107,7 @@
     ],
     "dry": false
   },
-  "start": "2021-10-08T09:22:35.175742",
+  "start": "2021-10-08T10:18:40.180292",
   "status": "completed",
   "deviated": false,
   "steady_states": {
@@ -119,9 +131,9 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T09:22:35.177133",
-          "end": "2021-10-08T09:22:35.177133",
-          "duration": 0.0,
+          "start": "2021-10-08T10:18:40.181294",
+          "end": "2021-10-08T10:18:40.182328",
+          "duration": 0.001034,
           "tolerance_met": true
         }
       ]
@@ -146,9 +158,9 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T09:23:15.917123",
-          "end": "2021-10-08T09:23:15.925461",
-          "duration": 0.008338,
+          "start": "2021-10-08T10:19:20.772785",
+          "end": "2021-10-08T10:19:20.781364",
+          "duration": 0.008579,
           "tolerance_met": true
         }
       ]
@@ -156,6 +168,38 @@
     "during": []
   },
   "run": [
+    {
+      "activity": {
+        "name": "test-tree",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "recursionVisualizer",
+          "func": "tree",
+          "arguments": {
+            "i": 100
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\recursionVisualizer.py\", line 24, in tree\n    t.right(20)\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1679, in right\n    self._rotate(-angle)\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3279, in _rotate\n    self._update()\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2661, in _update\n    self._update_data()\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2647, in _update_data\n    self.screen._incrementudc()\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1293, in _incrementudc\n    raise Terminator\n",
+        "turtle.Terminator\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
+      ],
+      "start": "2021-10-08T10:18:40.182736",
+      "end": "2021-10-08T10:18:40.187242",
+      "duration": 0.004506
+    },
     {
       "activity": {
         "type": "action",
@@ -174,9 +218,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T09:22:35.179165",
-      "end": "2021-10-08T09:22:35.555722",
-      "duration": 0.376557
+      "start": "2021-10-08T10:18:40.187242",
+      "end": "2021-10-08T10:18:40.436482",
+      "duration": 0.24924
     },
     {
       "activity": {
@@ -196,9 +240,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T09:22:45.559833",
-      "end": "2021-10-08T09:22:45.604910",
-      "duration": 0.045077
+      "start": "2021-10-08T10:18:50.441633",
+      "end": "2021-10-08T10:18:50.479912",
+      "duration": 0.038279
     },
     {
       "activity": {
@@ -218,9 +262,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T09:22:55.610785",
-      "end": "2021-10-08T09:22:55.752628",
-      "duration": 0.141843
+      "start": "2021-10-08T10:19:00.495581",
+      "end": "2021-10-08T10:19:00.623012",
+      "duration": 0.127431
     },
     {
       "activity": {
@@ -240,9 +284,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T09:23:05.760754",
-      "end": "2021-10-08T09:23:05.907137",
-      "duration": 0.146383
+      "start": "2021-10-08T10:19:10.625246",
+      "end": "2021-10-08T10:19:10.760889",
+      "duration": 0.135643
     },
     {
       "activity": {
@@ -261,12 +305,12 @@
       },
       "output": true,
       "status": "succeeded",
-      "start": "2021-10-08T09:23:15.917123",
-      "end": "2021-10-08T09:23:15.917123",
+      "start": "2021-10-08T10:19:20.772785",
+      "end": "2021-10-08T10:19:20.772785",
       "duration": 0.0
     }
   ],
   "rollbacks": [],
-  "end": "2021-10-08T09:23:15.925461",
-  "duration": 40.74971914291382
+  "end": "2021-10-08T10:19:20.782426",
+  "duration": 40.60213327407837
 }

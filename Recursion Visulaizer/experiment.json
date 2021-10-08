@@ -1,94 +1,102 @@
 {
-    "title": "Moving a file from under our feet is forgivable",
-    "description": "Our application should re-create a file that was removed",
-    "contributions": {
-        "reliability": "high",
-        "availability": "high"
-    },
-    "steady-state-hypothesis": {
-        "title": "The file must be around first",
-        "probes": [
-            {
-                "type": "probe",
-                "name": "file-must-exist",
-                "tolerance": true,
-		"timeout": 10,
-                "provider": {
-                    "type": "python",
-                    "module": "os.path",
-                    "func": "exists",
-                    "arguments": {
-                        "path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
+	"title": "Moving a file from under our feet is forgivable",
+	"description": "Our application should re-create a file that was removed",
+	"contributions": {
+		"reliability": "high",
+		"availability": "high"
+	},
+	"steady-state-hypothesis": {
+		"title": "The file must be around first",
+		"probes": [{
+			"type": "probe",
+			"name": "file-must-exist",
+			"tolerance": true,
+			"timeout": 10,
+			"provider": {
+				"type": "python",
+				"module": "os.path",
+				"func": "exists",
+				"arguments": {
+					"path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
 
-                    }
-                }
-            }
-        ]
-    },
-    "method": [
-       
- {
-            "type": "action",
-            "name": "test-turtle-forward-module",
-            "provider": {
-                "type": "python",
-                "module": "turtle",
-                "func": "forward",
-                "arguments": {
-                    "distance": 20
-                }
-            },
-            "pauses": {
-                "after": 10
-            }
-        },
-	    {
-            "type": "action",
-            "name": "test-turtle-backward-module",
-            "provider": {
-                "type": "python",
-                "module": "turtle",
-                "func": "backward",
-                "arguments": {
-                    "distance": 20
-                }
-            },
-            "pauses": {
-                "after": 10
-            }
-        },
-          {
-            "type": "action",
-            "name": "test-turtle-left-module",
-            "provider": {
-                "type": "python",
-                "module": "turtle",
-                "func": "left",
-                "arguments": {
-		    "angle" : 45
-                }
-            },
-            "pauses": {
-                "after": 10
-            }
-        },
-          {
-            "type": "action",
-            "name": "test-turtle-right-module",
-            "provider": {
-                "type": "python",
-                "module": "turtle",
-                "func": "right",
-                "arguments": {
-                    "angle": 45
-                }
-            },
-            "pauses": {
-                "after": 10
-            }
-        },
-        {
-            "ref": "file-must-exist"
-        }
-    ]
+				}
+			}
+		}]
+	},
+	"method": [{
+			"name": "test-tree",
+			"type": "action",
+			"provider": {
+				"type": "python",
+				"module": "recursionVisualizer",
+				"func": "tree",
+				"arguments": {
+					"i": 100
+				}
+			}
+		},
+		{
+			"type": "action",
+			"name": "test-turtle-forward-module",
+			"provider": {
+				"type": "python",
+				"module": "turtle",
+				"func": "forward",
+				"arguments": {
+					"distance": 20
+				}
+			},
+			"pauses": {
+				"after": 10
+			}
+		},
+		{
+			"type": "action",
+			"name": "test-turtle-backward-module",
+			"provider": {
+				"type": "python",
+				"module": "turtle",
+				"func": "backward",
+				"arguments": {
+					"distance": 20
+				}
+			},
+			"pauses": {
+				"after": 10
+			}
+		},
+		{
+			"type": "action",
+			"name": "test-turtle-left-module",
+			"provider": {
+				"type": "python",
+				"module": "turtle",
+				"func": "left",
+				"arguments": {
+					"angle": 45
+				}
+			},
+			"pauses": {
+				"after": 10
+			}
+		},
+		{
+			"type": "action",
+			"name": "test-turtle-right-module",
+			"provider": {
+				"type": "python",
+				"module": "turtle",
+				"func": "right",
+				"arguments": {
+					"angle": 45
+				}
+			},
+			"pauses": {
+				"after": 10
+			}
+		},
+		{
+			"ref": "file-must-exist"
+		}
+	]
 }
