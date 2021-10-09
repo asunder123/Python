@@ -37,7 +37,7 @@
 			}
 		},
 		{
-                        "name": "test-moduleturtletest",
+                        "name": "test-rightfunction-testturtlemodule",
                         "type": "action",
                         "provider": {
                                 "type": "python",
@@ -46,6 +46,20 @@
                                 "arguments": {
 
                                         "angle": 30
+                                }
+                        }
+                },
+
+                  {
+                        "name": "test-configdict-testturtlemodule",
+                        "type": "action",
+                        "provider": {
+                                "type": "python",
+                                "module": "turtletest",
+                                "func": "config_dict",
+                                "arguments": {
+                                         
+                                        "filename": "testturtle.py"
                                 }
                         }
                 },

@@ -43,7 +43,7 @@
         }
       },
       {
-        "name": "test-moduleturtletest",
+        "name": "test-rightfunction-testturtlemodule",
         "type": "action",
         "provider": {
           "type": "python",
@@ -51,6 +51,18 @@
           "func": "right",
           "arguments": {
             "angle": 30
+          }
+        }
+      },
+      {
+        "name": "test-configdict-testturtlemodule",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "config_dict",
+          "arguments": {
+            "filename": "testturtle.py"
           }
         }
       },
@@ -120,7 +132,7 @@
     ],
     "dry": false
   },
-  "start": "2021-10-09T08:23:12.341082",
+  "start": "2021-10-09T14:00:37.966025",
   "status": "completed",
   "deviated": false,
   "steady_states": {
@@ -144,8 +156,8 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-09T08:23:12.341082",
-          "end": "2021-10-09T08:23:12.341082",
+          "start": "2021-10-09T14:00:37.966025",
+          "end": "2021-10-09T14:00:37.966025",
           "duration": 0.0,
           "tolerance_met": true
         }
@@ -171,8 +183,8 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-09T08:23:53.049448",
-          "end": "2021-10-09T08:23:53.049448",
+          "start": "2021-10-09T14:01:18.635554",
+          "end": "2021-10-09T14:01:18.635554",
           "duration": 0.0,
           "tolerance_met": true
         }
@@ -210,13 +222,13 @@
         "\nDuring handling of the above exception, another exception occurred:\n\n",
         "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
       ],
-      "start": "2021-10-09T08:23:12.341082",
-      "end": "2021-10-09T08:23:12.341082",
+      "start": "2021-10-09T14:00:37.981649",
+      "end": "2021-10-09T14:00:37.981649",
       "duration": 0.0
     },
     {
       "activity": {
-        "name": "test-moduleturtletest",
+        "name": "test-rightfunction-testturtlemodule",
         "type": "action",
         "provider": {
           "type": "python",
@@ -241,9 +253,36 @@
         "\nDuring handling of the above exception, another exception occurred:\n\n",
         "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
       ],
-      "start": "2021-10-09T08:23:12.341082",
-      "end": "2021-10-09T08:23:12.425723",
-      "duration": 0.084641
+      "start": "2021-10-09T14:00:37.981649",
+      "end": "2021-10-09T14:00:38.067627",
+      "duration": 0.085978
+    },
+    {
+      "activity": {
+        "name": "test-configdict-testturtlemodule",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "config_dict",
+          "arguments": {
+            "filename": "testturtle.py"
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 179, in config_dict\n    with open(filename, \"r\") as f:\n",
+        "FileNotFoundError: [Errno 2] No such file or directory: 'testturtle.py'\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: FileNotFoundError: [Errno 2] No such file or directory: 'testturtle.py'\n"
+      ],
+      "start": "2021-10-09T14:00:38.067627",
+      "end": "2021-10-09T14:00:38.067627",
+      "duration": 0.0
     },
     {
       "activity": {
@@ -263,9 +302,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-09T08:23:12.425723",
-      "end": "2021-10-09T08:23:12.626262",
-      "duration": 0.200539
+      "start": "2021-10-09T14:00:38.067627",
+      "end": "2021-10-09T14:00:38.282270",
+      "duration": 0.214643
     },
     {
       "activity": {
@@ -285,9 +324,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-09T08:23:22.631725",
-      "end": "2021-10-09T08:23:22.694280",
-      "duration": 0.062555
+      "start": "2021-10-09T14:00:48.296374",
+      "end": "2021-10-09T14:00:48.343013",
+      "duration": 0.046639
     },
     {
       "activity": {
@@ -306,23 +345,10 @@
         }
       },
       "output": null,
-      "status": "failed",
-      "exception": [
-        "Traceback (most recent call last):\n",
-        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-        "  File \"<string>\", line 8, in left\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1700, in left\n    self._rotate(angle)\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3277, in _rotate\n    self._update()\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2661, in _update\n    self._update_data()\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2647, in _update_data\n    self.screen._incrementudc()\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1293, in _incrementudc\n    raise Terminator\n",
-        "turtle.Terminator\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
-      ],
-      "start": "2021-10-09T08:23:32.703463",
-      "end": "2021-10-09T08:23:32.772230",
-      "duration": 0.068767
+      "status": "succeeded",
+      "start": "2021-10-09T14:00:58.345314",
+      "end": "2021-10-09T14:00:58.492460",
+      "duration": 0.147146
     },
     {
       "activity": {
@@ -342,9 +368,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-09T08:23:42.781231",
-      "end": "2021-10-09T08:23:43.032622",
-      "duration": 0.251391
+      "start": "2021-10-09T14:01:08.505799",
+      "end": "2021-10-09T14:01:08.625853",
+      "duration": 0.120054
     },
     {
       "activity": {
@@ -363,12 +389,12 @@
       },
       "output": true,
       "status": "succeeded",
-      "start": "2021-10-09T08:23:53.049448",
-      "end": "2021-10-09T08:23:53.049448",
+      "start": "2021-10-09T14:01:18.635554",
+      "end": "2021-10-09T14:01:18.635554",
       "duration": 0.0
     }
   ],
   "rollbacks": [],
-  "end": "2021-10-09T08:23:53.049448",
-  "duration": 40.70836591720581
+  "end": "2021-10-09T14:01:18.635554",
+  "duration": 40.66952919960022
 }

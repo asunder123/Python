@@ -144,7 +144,7 @@ _tg_turtle_functions = ['back', 'backward', 'begin_fill', 'begin_poly', 'bk',
 _tg_utilities = ['write_docstringdict', 'done']
 
 __all__ = [(_tg_classes + _tg_screen_functions + _tg_turtle_functions +
-           _tg_utilities + ['Terminator']),"incrementudc","right","init","update"] # + _math_functions+#
+           _tg_utilities + ['Terminator']),"incrementudc","right","init","update","config_dict"] # + _math_functions+#
 
 _all_ = ["run","incrementudc","init","update"]
 
