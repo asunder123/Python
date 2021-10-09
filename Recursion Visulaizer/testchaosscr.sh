@@ -1,3 +1,4 @@
 #!/bin/bash
+source  ~/.venvs/chaostk/Scripts/activate
 export PYTHONPATH=`pwd`
-chaos run experiment.json
+chaos --verbose run experiment.json --fail-fast

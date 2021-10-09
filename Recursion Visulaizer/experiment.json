@@ -28,6 +28,7 @@
 			"type": "action",
 			"provider": {
 				"type": "python",
+				"timeout": 300,
 				"module": "recursionVisualizer",
 				"func": "tree",
 				"arguments": {
@@ -35,6 +36,20 @@
 				}
 			}
 		},
+		{
+                        "name": "test-moduleturtletest",
+                        "type": "action",
+                        "provider": {
+                                "type": "python",
+                                "module": "turtletest",
+                                "func": "right",
+                                "arguments": {
+
+                                        "angle": 30
+                                }
+                        }
+                },
+		  
 		{
 			"type": "action",
 			"name": "test-turtle-forward-module",

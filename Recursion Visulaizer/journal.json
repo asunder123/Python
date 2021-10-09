@@ -34,10 +34,23 @@
         "type": "action",
         "provider": {
           "type": "python",
+          "timeout": 300,
           "module": "recursionVisualizer",
           "func": "tree",
           "arguments": {
             "i": 100
+          }
+        }
+      },
+      {
+        "name": "test-moduleturtletest",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "right",
+          "arguments": {
+            "angle": 30
           }
         }
       },
@@ -107,7 +120,7 @@
     ],
     "dry": false
   },
-  "start": "2021-10-08T10:23:31.258087",
+  "start": "2021-10-09T08:23:12.341082",
   "status": "completed",
   "deviated": false,
   "steady_states": {
@@ -131,8 +144,8 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T10:23:31.258087",
-          "end": "2021-10-08T10:23:31.258087",
+          "start": "2021-10-09T08:23:12.341082",
+          "end": "2021-10-09T08:23:12.341082",
           "duration": 0.0,
           "tolerance_met": true
         }
@@ -158,9 +171,9 @@
           },
           "output": true,
           "status": "succeeded",
-          "start": "2021-10-08T10:24:12.217895",
-          "end": "2021-10-08T10:24:12.219117",
-          "duration": 0.001222,
+          "start": "2021-10-09T08:23:53.049448",
+          "end": "2021-10-09T08:23:53.049448",
+          "duration": 0.0,
           "tolerance_met": true
         }
       ]
@@ -174,6 +187,7 @@
         "type": "action",
         "provider": {
           "type": "python",
+          "timeout": 300,
           "module": "recursionVisualizer",
           "func": "tree",
           "arguments": {
@@ -196,9 +210,40 @@
         "\nDuring handling of the above exception, another exception occurred:\n\n",
         "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
       ],
-      "start": "2021-10-08T10:23:31.258087",
-      "end": "2021-10-08T10:23:31.265070",
-      "duration": 0.006983
+      "start": "2021-10-09T08:23:12.341082",
+      "end": "2021-10-09T08:23:12.341082",
+      "duration": 0.0
+    },
+    {
+      "activity": {
+        "name": "test-moduleturtletest",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "right",
+          "arguments": {
+            "angle": 30
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"<string>\", line 6, in right\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 3821, in __init__\n    Turtle._screen = Screen()\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 3671, in Screen\n    Turtle._screen = _Screen()\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 3697, in __init__\n    self._root.setupcanvas(width, height, canvwidth, canvheight)\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 444, in setupcanvas\n    self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)\n",
+        "TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
+      ],
+      "start": "2021-10-09T08:23:12.341082",
+      "end": "2021-10-09T08:23:12.425723",
+      "duration": 0.084641
     },
     {
       "activity": {
@@ -218,9 +263,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T10:23:31.266048",
-      "end": "2021-10-08T10:23:31.513565",
-      "duration": 0.247517
+      "start": "2021-10-09T08:23:12.425723",
+      "end": "2021-10-09T08:23:12.626262",
+      "duration": 0.200539
     },
     {
       "activity": {
@@ -239,28 +284,10 @@
         }
       },
       "output": null,
-      "status": "failed",
-      "exception": [
-        "Traceback (most recent call last):\n",
-        "  File \"<string>\", line 8, in backward\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1658, in back\n    self._go(-distance)\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1606, in _go\n    self._goto(ende)\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3182, in _goto\n    screen._drawline(self.drawingLineItem, ((0, 0), (0, 0)),\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 544, in _drawline\n    self.cv.coords(lineitem, *cl)\n",
-        "  File \"<string>\", line 1, in coords\n",
-        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\tkinter\\__init__.py\", line 2766, in coords\n    self.tk.call((self._w, 'coords') + args))]\n",
-        "_tkinter.TclError: invalid command name \".!canvas\"\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "Traceback (most recent call last):\n",
-        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-        "  File \"<string>\", line 12, in backward\n",
-        "turtle.Terminator\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
-      ],
-      "start": "2021-10-08T10:23:41.525191",
-      "end": "2021-10-08T10:23:41.666651",
-      "duration": 0.14146
+      "status": "succeeded",
+      "start": "2021-10-09T08:23:22.631725",
+      "end": "2021-10-09T08:23:22.694280",
+      "duration": 0.062555
     },
     {
       "activity": {
@@ -279,10 +306,23 @@
         }
       },
       "output": null,
-      "status": "succeeded",
-      "start": "2021-10-08T10:23:51.674984",
-      "end": "2021-10-08T10:23:52.053284",
-      "duration": 0.3783
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"<string>\", line 8, in left\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1700, in left\n    self._rotate(angle)\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3277, in _rotate\n    self._update()\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2661, in _update\n    self._update_data()\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2647, in _update_data\n    self.screen._incrementudc()\n",
+        "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1293, in _incrementudc\n    raise Terminator\n",
+        "turtle.Terminator\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
+      ],
+      "start": "2021-10-09T08:23:32.703463",
+      "end": "2021-10-09T08:23:32.772230",
+      "duration": 0.068767
     },
     {
       "activity": {
@@ -302,9 +342,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-08T10:24:02.063566",
-      "end": "2021-10-08T10:24:02.200981",
-      "duration": 0.137415
+      "start": "2021-10-09T08:23:42.781231",
+      "end": "2021-10-09T08:23:43.032622",
+      "duration": 0.251391
     },
     {
       "activity": {
@@ -323,12 +363,12 @@
       },
       "output": true,
       "status": "succeeded",
-      "start": "2021-10-08T10:24:12.211815",
-      "end": "2021-10-08T10:24:12.215359",
-      "duration": 0.003544
+      "start": "2021-10-09T08:23:53.049448",
+      "end": "2021-10-09T08:23:53.049448",
+      "duration": 0.0
     }
   ],
   "rollbacks": [],
-  "end": "2021-10-08T10:24:12.222080",
-  "duration": 40.963993549346924
+  "end": "2021-10-09T08:23:53.049448",
+  "duration": 40.70836591720581
 }
