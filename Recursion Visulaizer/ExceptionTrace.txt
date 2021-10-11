@@ -1,0 +1,31 @@
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py4
+
+
+ File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+
+class TurtleScreen
+
+
+
+[2021-10-09 12:35:32 INFO] [activity:161] Action: test-moduleturtletest
+[2021-10-09 12:35:32 DEBUG] [python:34] Activity 'test-moduleturtletest' loaded from '<string>'
+[2021-10-09 12:35:32 DEBUG] [activity:235] Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in right
+      File "C:\Users\asunder\Python\Recursion Visulaizer\turtletest.py", line 3822, in __init__
+        RawTurtle.__init__(self, Turtle._screen,
+      File "C:\Users\asunder\Python\Recursion Visulaizer\turtletest.py", line 2566, in __init__
+        self._update()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\turtletest.py", line 2669, in _update
+        self._update_data()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\turtletest.py", line 2655, in _update_data

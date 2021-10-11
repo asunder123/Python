@@ -5,37 +5,38 @@
 		"reliability": "high",
 		"availability": "high"
 	},
-	"steady-state-hypothesis": {
-		"title": "The file must be around first",
-		"probes": [{
-			"type": "probe",
-			"name": "file-must-exist",
-			"tolerance": true,
-			"timeout": 10,
-			"provider": {
-				"type": "python",
-				"module": "os.path",
-				"func": "exists",
-				"arguments": {
-					"path": "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\\lib\\ntpath.py"
+               "controls": [
+    {
+        "type": "probe",
+	"name": "tracing",
+        "scope": "before",
+        "automatic": true,
+        "provider": {
+            "type": "python",
+            "module": "chaostracing.control"
+        }
+    }
+],
 
-				}
-			}
-		}]
-	},
-	"method": [{
-			"name": "test-tree",
-			"type": "action",
+	"steady-state-hypothesis": {
+		"title": "Validate Steady state",
+		"probes": [
+                          {
+                        "name": "test-steady-state",
+                        "type": "probe",
+                        "tolerance":200,
 			"provider": {
-				"type": "python",
-				"timeout": 300,
-				"module": "recursionVisualizer",
-				"func": "tree",
-				"arguments": {
-					"i": 100
-				}
-			}
-		},
+                                "type": "python",
+                                "module": "recursionVisualizer",
+                                "func": "steadystate",
+                                "arguments": {
+                                        "i": 200
+                                }
+                        }
+                }]
+	},
+
+	"method": [
 		{
                         "name": "test-rightfunction-testturtlemodule",
                         "type": "action",
@@ -45,7 +46,7 @@
                                 "func": "right",
                                 "arguments": {
 
-                                        "angle": 30
+                                        "angle": "40"
                                 }
                         }
                 },
@@ -59,7 +60,7 @@
                                 "func": "config_dict",
                                 "arguments": {
                                          
-                                        "filename": "testturtle.py"
+                                        "filename": "turtletest.py"
                                 }
                         }
                 },
@@ -125,7 +126,7 @@
 			}
 		},
 		{
-			"ref": "file-must-exist"
+			"ref": "test-steady-state"
 		}
 	]
 }

@@ -10,12 +10,21 @@ from chaoslib.types import Configuration, Secrets,Activity
 from chaoslib.exceptions import ActivityFailed, InvalidActivity
 from turtle import *
 
-__all__ = ["run_python_activity", "cycle"]
+__all__ = ["cycle","tree","fractal","rec","line","steadystate"]
 t = turtle.Turtle()
 num=random.randint(900,1000)
 t.right(num)
 t.speed(100*num)
 t.left(num) 
+
+def steadystate(i: int, configuration: Configuration = None, secrets: Secrets=None)->Any:
+    if i<10:
+        return
+    else:  
+        t.right(i)
+        return i
+
+
 
 def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
     if i<10:
@@ -169,7 +178,7 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
         print('tree execution complete')
         pass
 
-def cycle(i):
+def cycle(i:int,configuration: Configuration=None,secrets: Secrets=None)->None:
     if i<10:
         return 
     else:
@@ -180,8 +189,9 @@ def cycle(i):
         else:
             print('No Exception occured')   
         print('cycle loop complete')
+        pass
 
-def fractal(i):
+def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None:
     if i<10:
         return
     else:
@@ -222,24 +232,22 @@ def fractal(i):
         print('Exit final while loop')
         t.tilt(45)
         print('fractal execution complete')
+        pass
+
 val=input("Enter a num:")
 num1=int(val)
-try:
-    while num1>0:  
-      t.right(num1/5)
-      t.backward(num1/5)
-      fractal(num1)
-      t.left(num1/5)
-      t.right(num1/5)
-      num1-=5
-    while num1>0:
-     t.backward(num1/5)   
-     t.right(num1/5)
-     tree(num1)
-     t.left(num1/5)
-     t.right(num1/5)
-     num1-=5
-except:
- print('Fractal exception') 
-turtle.done()
-print('Simulation complete')
+def rec(num1:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
+ try:
+  while num1>0:  
+   t.right(num1/5)
+   t.backward(num1/5)
+   fractal(num1)
+   t.left(num1/5)
+   t.right(num1/5)
+   num1-=5
+ except:
+  print('Fractal exception') 
+  turtle.done()
+  print('Simulation complete')
+  pass
+rec(num1)  
