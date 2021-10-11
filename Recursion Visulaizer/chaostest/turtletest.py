@@ -144,7 +144,7 @@ _tg_turtle_functions = ['back', 'backward', 'begin_fill', 'begin_poly', 'bk',
 _tg_utilities = ['write_docstringdict', 'done']
 
 __all__ = [(_tg_classes + _tg_screen_functions + _tg_turtle_functions +
-           _tg_utilities + ['Terminator']),"incrementudc","right","init","update","config_dict"] # + _math_functions+#
+           _tg_utilities + ['Terminator']),"incrementudc","right","init","update","config_dict","readconfig","tracer","rotate","ondrag","onscreenclick","onkeyrelease"] # + _math_functions+#
 
 _all_ = ["run","incrementudc","init","update"]
 
@@ -174,7 +174,7 @@ _CFG = {"width" : 0.5,               # Screen
         "using_IDLE": False
        }
 
-def config_dict(filename):
+def config_dict(filename,configuration: Configuration=None,secrets: Secrets=None)->Any:
     """Convert content of config-file into dictionary."""
     with open(filename, "r") as f:
         cfglines = f.readlines()
@@ -202,6 +202,7 @@ def config_dict(filename):
                 pass # value need not be converted
         cfgdict[key] = value
     return cfgdict
+    pass
 
 def readconfig(cfgdict):
     """Read config-files, change configuration-dict accordingly.
@@ -271,13 +272,15 @@ class Vec2D(tuple):
         return Vec2D(-self[0], -self[1])
     def __abs__(self):
         return (self[0]**2 + self[1]**2)**0.5
-    def rotate(self, angle):
+    def rotate(self, angle,configuration: Configuration=None,secrets: Secrets=None)->Any:
         """rotate self counterclockwise by angle
         """
         perp = Vec2D(-self[1], self[0])
         angle = angle * math.pi / 180.0
         c, s = math.cos(angle), math.sin(angle)
         return Vec2D(self[0]*c+perp[0]*s, self[1]*c+perp[1]*s)
+        pass
+
     def __getnewargs__(self):
         return (self[0], self[1])
     def __repr__(self):
@@ -641,7 +644,7 @@ class TurtleScreenBase(object):
             self.cv.tag_bind(item, "<Button%s-ButtonRelease>" % num,
                              eventfun, add)
 
-    def _ondrag(self, item, fun, num=1, add=None):
+    def ondrag(self, item, fun, num=1, add=None,configuration: Configuration=None,secrets: Secrets=None)->Any:
         """Bind fun to mouse-move-event (with pressed mouse button) on turtle.
         fun must be a function with two arguments, the coordinates of the
         actual mouse position on the canvas.
@@ -661,8 +664,9 @@ class TurtleScreenBase(object):
                 except Exception:
                     pass
             self.cv.tag_bind(item, "<Button%s-Motion>" % num, eventfun, add)
+            pass
 
-    def _onscreenclick(self, fun, num=1, add=None):
+    def onscreenclick(self, fun, num=1, add=None,configuration: Configuration=None,secrets: Secrets=None)->None:
         """Bind fun to mouse-click event on canvas.
         fun must be a function with two arguments, the coordinates
         of the clicked point on the canvas.
@@ -679,8 +683,9 @@ class TurtleScreenBase(object):
                         -self.cv.canvasy(event.y)/self.yscale)
                 fun(x, y)
             self.cv.bind("<Button-%s>" % num, eventfun, add)
+            pass
 
-    def _onkeyrelease(self, fun, key):
+    def onkeyrelease(self, fun, key,configuration: Configuration=None,secrets:Secrets=None)->Any:
         """Bind fun to key-release event of key.
         Canvas must have focus. See method listen
         """
@@ -690,6 +695,7 @@ class TurtleScreenBase(object):
             def eventfun(event):
                 fun()
             self.cv.bind("<KeyRelease-%s>" % key, eventfun)
+            pass
 
     def _onkeypress(self, fun, key=None):
         """If key is given, bind fun to key-press event of key.
@@ -1249,7 +1255,7 @@ class TurtleScreen(TurtleScreenBase):
             color = self._color(color)
         return color
 
-    def tracer(self, n=None, delay=None):
+    def tracer(self, n=None, delay=None,config: Configuration=None,secrets: Secrets=None)->Any:
         """Turns turtle animation on/off and set delay for update drawings.
 
         Optional arguments:
@@ -1276,6 +1282,7 @@ class TurtleScreen(TurtleScreenBase):
             self._delayvalue = int(delay)
         if self._tracing:
             self.update()
+            pass
 
     def delay(self, delay=None):
         """ Return or set the drawing delay in milliseconds.
@@ -1612,7 +1619,7 @@ class TNavigator(object):
         ende = self._position + self._orient * distance
         self._goto(ende)
 
-    def _rotate(self, angle):
+    def rotate(self, angle):
         """Turn turtle counterclockwise by specified angle if angle > 0."""
         angle *= self._degreesPerAU
         self._orient = self._orient.rotate(angle)

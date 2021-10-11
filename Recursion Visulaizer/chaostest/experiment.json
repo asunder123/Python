@@ -24,47 +24,73 @@
                           {
                         "name": "test-steady-state",
                         "type": "probe",
-                        "tolerance":200,
+                        "tolerance":15,
 			"provider": {
                                 "type": "python",
                                 "module": "recursionVisualizer",
                                 "func": "steadystate",
                                 "arguments": {
-                                        "i": 200
+                                        "i":15
                                 }
                         }
                 }]
 	},
 
 	"method": [
-		{
-                        "name": "test-rightfunction-testturtlemodule",
+
+                  {
+                        "name": "test-readconfig-module",
                         "type": "action",
                         "provider": {
                                 "type": "python",
                                 "module": "turtletest",
-                                "func": "right",
+                                "func": "readconfig",
                                 "arguments": {
-
-                                        "angle": "40"
+                                         
+                                        "cfgdict":"default.cfg"
                                 }
                         }
                 },
-
-                  {
-                        "name": "test-configdict-testturtlemodule",
+		{
+                        "name": "test-configdict-module",
                         "type": "action",
                         "provider": {
                                 "type": "python",
                                 "module": "turtletest",
                                 "func": "config_dict",
                                 "arguments": {
-                                         
-                                        "filename": "turtletest.py"
+
+                                        "filename":"turtletest.py"
                                 }
                         }
-                },
-		  
+              },
+                  {
+                        "name": "test-onscreenclick-module",
+                        "type": "action",
+                        "provider": {
+                                "type": "python",
+                                "module": "turtletest",
+                                "func": "onscreenclick",
+                                "arguments": {
+
+                                        "fun":"None"
+                                }
+                        }
+              },
+
+		{
+                        "name": "test-ondrag-module",
+                        "type": "action",
+                        "provider": {
+                                "type": "python",
+                                "module": "turtletest",
+                                "func": "ondrag",
+                                "arguments": {
+                                               
+                                        "fun":"None"
+                                }
+                        }
+                },  
 		{
 			"type": "action",
 			"name": "test-turtle-forward-module",
@@ -73,11 +99,11 @@
 				"module": "turtle",
 				"func": "forward",
 				"arguments": {
-					"distance": 20
+					"distance":34
 				}
 			},
 			"pauses": {
-				"after": 10
+				"after":10
 			}
 		},
 		{
@@ -88,22 +114,22 @@
 				"module": "turtle",
 				"func": "backward",
 				"arguments": {
-					"distance": 20
+					"distance":56
 				}
 			},
 			"pauses": {
-				"after": 10
+				"after":10
 			}
 		},
 		{
 			"type": "action",
-			"name": "test-turtle-left-module",
+			"name": "test-turtle-left",
 			"provider": {
 				"type": "python",
 				"module": "turtle",
 				"func": "left",
 				"arguments": {
-					"angle": 45
+					"angle":45
 				}
 			},
 			"pauses": {
@@ -112,13 +138,13 @@
 		},
 		{
 			"type": "action",
-			"name": "test-turtle-right-module",
+			"name": "test-turtle-rt-module",
 			"provider": {
 				"type": "python",
 				"module": "turtle",
 				"func": "right",
 				"arguments": {
-					"angle": 45
+					"angle":45
 				}
 			},
 			"pauses": {

@@ -27,13 +27,13 @@
         {
           "name": "test-steady-state",
           "type": "probe",
-          "tolerance": 200,
+          "tolerance": 15,
           "provider": {
             "type": "python",
             "module": "recursionVisualizer",
             "func": "steadystate",
             "arguments": {
-              "i": 200
+              "i": 15
             }
           }
         }
@@ -41,19 +41,19 @@
     },
     "method": [
       {
-        "name": "test-rightfunction-testturtlemodule",
+        "name": "test-readconfig-module",
         "type": "action",
         "provider": {
           "type": "python",
           "module": "turtletest",
-          "func": "right",
+          "func": "readconfig",
           "arguments": {
-            "angle": "40"
+            "cfgdict": "default.cfg"
           }
         }
       },
       {
-        "name": "test-configdict-testturtlemodule",
+        "name": "test-configdict-module",
         "type": "action",
         "provider": {
           "type": "python",
@@ -65,6 +65,30 @@
         }
       },
       {
+        "name": "test-onscreenclick-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "onscreenclick",
+          "arguments": {
+            "fun": "None"
+          }
+        }
+      },
+      {
+        "name": "test-ondrag-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "ondrag",
+          "arguments": {
+            "fun": "None"
+          }
+        }
+      },
+      {
         "type": "action",
         "name": "test-turtle-forward-module",
         "provider": {
@@ -72,7 +96,7 @@
           "module": "turtle",
           "func": "forward",
           "arguments": {
-            "distance": 20
+            "distance": 34
           }
         },
         "pauses": {
@@ -87,7 +111,7 @@
           "module": "turtle",
           "func": "backward",
           "arguments": {
-            "distance": 20
+            "distance": 56
           }
         },
         "pauses": {
@@ -96,7 +120,7 @@
       },
       {
         "type": "action",
-        "name": "test-turtle-left-module",
+        "name": "test-turtle-left",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -111,7 +135,7 @@
       },
       {
         "type": "action",
-        "name": "test-turtle-right-module",
+        "name": "test-turtle-rt-module",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -130,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-10-11T11:54:55.423298",
+  "start": "2021-10-11T15:09:41.430141",
   "status": "completed",
   "deviated": false,
   "steady_states": {
@@ -141,21 +165,21 @@
           "activity": {
             "name": "test-steady-state",
             "type": "probe",
-            "tolerance": 200,
+            "tolerance": 15,
             "provider": {
               "type": "python",
               "module": "recursionVisualizer",
               "func": "steadystate",
               "arguments": {
-                "i": 200
+                "i": 15
               }
             }
           },
-          "output": 200,
+          "output": 15,
           "status": "succeeded",
-          "start": "2021-10-11T11:54:55.425298",
-          "end": "2021-10-11T11:54:55.443958",
-          "duration": 0.01866,
+          "start": "2021-10-11T15:09:41.434162",
+          "end": "2021-10-11T15:09:41.459696",
+          "duration": 0.025534,
           "tolerance_met": true
         }
       ]
@@ -167,21 +191,21 @@
           "activity": {
             "name": "test-steady-state",
             "type": "probe",
-            "tolerance": 200,
+            "tolerance": 15,
             "provider": {
               "type": "python",
               "module": "recursionVisualizer",
               "func": "steadystate",
               "arguments": {
-                "i": 200
+                "i": 15
               }
             }
           },
-          "output": 200,
+          "output": 15,
           "status": "succeeded",
-          "start": "2021-10-11T11:55:36.026544",
-          "end": "2021-10-11T11:55:36.051338",
-          "duration": 0.024794,
+          "start": "2021-10-11T15:10:22.073088",
+          "end": "2021-10-11T15:10:22.086358",
+          "duration": 0.01327,
           "tolerance_met": true
         }
       ]
@@ -191,38 +215,26 @@
   "run": [
     {
       "activity": {
-        "name": "test-rightfunction-testturtlemodule",
+        "name": "test-readconfig-module",
         "type": "action",
         "provider": {
           "type": "python",
           "module": "turtletest",
-          "func": "right",
+          "func": "readconfig",
           "arguments": {
-            "angle": "40"
+            "cfgdict": "default.cfg"
           }
         }
       },
       "output": null,
-      "status": "failed",
-      "exception": [
-        "Traceback (most recent call last):\n",
-        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-        "  File \"<string>\", line 6, in right\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 3821, in __init__\n    Turtle._screen = Screen()\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 3671, in Screen\n    Turtle._screen = _Screen()\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 3697, in __init__\n    self._root.setupcanvas(width, height, canvwidth, canvheight)\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\turtletest.py\", line 444, in setupcanvas\n    self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)\n",
-        "TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
-      ],
-      "start": "2021-10-11T11:54:55.444968",
-      "end": "2021-10-11T11:54:55.530697",
-      "duration": 0.085729
+      "status": "succeeded",
+      "start": "2021-10-11T15:09:41.461635",
+      "end": "2021-10-11T15:09:41.462636",
+      "duration": 0.001001
     },
     {
       "activity": {
-        "name": "test-configdict-testturtlemodule",
+        "name": "test-configdict-module",
         "type": "action",
         "provider": {
           "type": "python",
@@ -649,9 +661,70 @@
         "tri.write(\"  Click me!\", font": "(\"Courier\", 12, \"bold\") )"
       },
       "status": "succeeded",
-      "start": "2021-10-11T11:54:55.530697",
-      "end": "2021-10-11T11:54:55.597614",
-      "duration": 0.066917
+      "start": "2021-10-11T15:09:41.462636",
+      "end": "2021-10-11T15:09:41.532807",
+      "duration": 0.070171
+    },
+    {
+      "activity": {
+        "name": "test-onscreenclick-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "onscreenclick",
+          "arguments": {
+            "fun": "None"
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"<string>\", line 6, in onscreenclick\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3678, in Screen\n    Turtle._screen = _Screen()\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3704, in __init__\n    self._root.setupcanvas(width, height, canvwidth, canvheight)\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 447, in setupcanvas\n    self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)\n",
+        "TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
+      ],
+      "start": "2021-10-11T15:09:41.533774",
+      "end": "2021-10-11T15:09:41.618268",
+      "duration": 0.084494
+    },
+    {
+      "activity": {
+        "name": "test-ondrag-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "ondrag",
+          "arguments": {
+            "fun": "None"
+          }
+        }
+      },
+      "output": null,
+      "status": "failed",
+      "exception": [
+        "Traceback (most recent call last):\n",
+        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+        "  File \"<string>\", line 6, in ondrag\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3828, in __init__\n    Turtle._screen = Screen()\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3678, in Screen\n    Turtle._screen = _Screen()\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3704, in __init__\n    self._root.setupcanvas(width, height, canvwidth, canvheight)\n",
+        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 447, in setupcanvas\n    self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)\n",
+        "TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n",
+        "\nDuring handling of the above exception, another exception occurred:\n\n",
+        "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
+      ],
+      "start": "2021-10-11T15:09:41.619295",
+      "end": "2021-10-11T15:09:41.620301",
+      "duration": 0.001006
     },
     {
       "activity": {
@@ -662,7 +735,7 @@
           "module": "turtle",
           "func": "forward",
           "arguments": {
-            "distance": 20
+            "distance": 34
           }
         },
         "pauses": {
@@ -671,9 +744,9 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-11T11:54:55.598692",
-      "end": "2021-10-11T11:54:55.659401",
-      "duration": 0.060709
+      "start": "2021-10-11T15:09:41.621301",
+      "end": "2021-10-11T15:09:41.705764",
+      "duration": 0.084463
     },
     {
       "activity": {
@@ -684,7 +757,7 @@
           "module": "turtle",
           "func": "backward",
           "arguments": {
-            "distance": 20
+            "distance": 56
           }
         },
         "pauses": {
@@ -693,14 +766,14 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-11T11:55:05.670854",
-      "end": "2021-10-11T11:55:05.746152",
-      "duration": 0.075298
+      "start": "2021-10-11T15:09:51.717579",
+      "end": "2021-10-11T15:09:51.794251",
+      "duration": 0.076672
     },
     {
       "activity": {
         "type": "action",
-        "name": "test-turtle-left-module",
+        "name": "test-turtle-left",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -715,14 +788,14 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-11T11:55:15.750832",
-      "end": "2021-10-11T11:55:15.874540",
-      "duration": 0.123708
+      "start": "2021-10-11T15:10:01.806762",
+      "end": "2021-10-11T15:10:01.915691",
+      "duration": 0.108929
     },
     {
       "activity": {
         "type": "action",
-        "name": "test-turtle-right-module",
+        "name": "test-turtle-rt-module",
         "provider": {
           "type": "python",
           "module": "turtle",
@@ -737,32 +810,32 @@
       },
       "output": null,
       "status": "succeeded",
-      "start": "2021-10-11T11:55:25.879429",
-      "end": "2021-10-11T11:55:25.987927",
-      "duration": 0.108498
+      "start": "2021-10-11T15:10:11.918814",
+      "end": "2021-10-11T15:10:12.026531",
+      "duration": 0.107717
     },
     {
       "activity": {
         "name": "test-steady-state",
         "type": "probe",
-        "tolerance": 200,
+        "tolerance": 15,
         "provider": {
           "type": "python",
           "module": "recursionVisualizer",
           "func": "steadystate",
           "arguments": {
-            "i": 200
+            "i": 15
           }
         }
       },
-      "output": 200,
+      "output": 15,
       "status": "succeeded",
-      "start": "2021-10-11T11:55:35.991650",
-      "end": "2021-10-11T11:55:36.021537",
-      "duration": 0.029887
+      "start": "2021-10-11T15:10:22.043015",
+      "end": "2021-10-11T15:10:22.071080",
+      "duration": 0.028065
     }
   ],
   "rollbacks": [],
-  "end": "2021-10-11T11:55:36.052314",
-  "duration": 40.62901592254639
+  "end": "2021-10-11T15:10:22.088614",
+  "duration": 40.6584734916687
 }
