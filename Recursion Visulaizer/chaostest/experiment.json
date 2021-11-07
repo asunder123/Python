@@ -60,7 +60,7 @@
                                 "func": "config_dict",
                                 "arguments": {
 
-                                        "filename":"turtletest.py"
+                                        "filename":"test.py"
                                 }
                         }
               },

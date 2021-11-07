@@ -15323,3 +15323,688 @@
 [36m[2021-10-11 20:40:22 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
 [36m[2021-10-11 20:40:22 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
 [36m[2021-10-11 20:40:22 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:51:16 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-12 11:51:16 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-12 11:51:16 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-12 11:51:17 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:51:17 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:51:17 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:51:17 DEBUG] [caching:35][39m Cached 9 activities
+[32m[2021-10-12 11:51:17 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-12 11:51:17 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:51:17 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:51:17 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:51:23 DEBUG] [python:167][39m Control module 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py' does not declare 'validate_control'
+[32m[2021-10-12 11:51:23 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-12 11:51:23 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:51:23 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:51:23 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2021-10-12 11:51:23 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:51:23 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:51:23 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:51:23 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-12 11:51:23 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:39][39m Initializing controls
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:48][39m Initializing control 'tracing'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'configure_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:51:23 DEBUG] [control:24][39m Configuring opentracing control...
+[36m[2021-10-12 11:51:23 DEBUG] [control:29][39m Creating a noop tracer
+[36m[2021-10-12 11:51:23 DEBUG] [control:269][39m The noop tracer will not send any data out
+[36m[2021-10-12 11:51:23 DEBUG] [control:41][39m OpenTracing tracer <opentracing.tracer.Tracer object at 0x0000027BEF5A6AC0> created
+[32m[2021-10-12 11:51:23 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-12 11:51:23 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'experiment'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_experiment_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:51:23 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-12 11:51:23 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:23 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:51:23 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:51:23 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:51:23 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[32m[2021-10-12 11:51:23 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[32m[2021-10-12 11:51:23 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'method'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_method_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:23 INFO] [activity:161][39m Action: test-readconfig-module
+[36m[2021-10-12 11:51:23 DEBUG] [python:34][39m Activity 'test-readconfig-module' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py'
+[36m[2021-10-12 11:51:23 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:23 INFO] [activity:161][39m Action: test-configdict-module
+[36m[2021-10-12 11:51:23 DEBUG] [python:34][39m Activity 'test-configdict-module' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py'
+[36m[2021-10-12 11:51:23 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 179, in config_dict
+        with open(filename, "r") as f:
+    FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 179, in config_dict
+        with open(filename, "r") as f:
+    chaoslib.exceptions.ActivityFailed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+[31m[2021-10-12 11:51:23 ERROR] [activity:188][39m   => failed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:23 INFO] [activity:161][39m Action: test-onscreenclick-module
+[36m[2021-10-12 11:51:23 DEBUG] [python:34][39m Activity 'test-onscreenclick-module' loaded from '<string>'
+[36m[2021-10-12 11:51:23 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in onscreenclick
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in onscreenclick
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[31m[2021-10-12 11:51:23 ERROR] [activity:188][39m   => failed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:23 INFO] [activity:161][39m Action: test-ondrag-module
+[36m[2021-10-12 11:51:23 DEBUG] [python:34][39m Activity 'test-ondrag-module' loaded from '<string>'
+[36m[2021-10-12 11:51:23 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in ondrag
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3828, in __init__
+        Turtle._screen = Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in ondrag
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3828, in __init__
+        Turtle._screen = Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[31m[2021-10-12 11:51:23 ERROR] [activity:188][39m   => failed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[36m[2021-10-12 11:51:23 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:23 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:23 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-12 11:51:23 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-12 11:51:23 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:51:23 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:51:33 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:33 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:33 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-12 11:51:33 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-12 11:51:33 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:51:33 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:51:44 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:44 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:44 INFO] [activity:161][39m Action: test-turtle-left
+[36m[2021-10-12 11:51:44 DEBUG] [python:34][39m Activity 'test-turtle-left' loaded from '<string>'
+[36m[2021-10-12 11:51:44 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:51:44 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:51:54 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:51:54 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:51:54 INFO] [activity:161][39m Action: test-turtle-rt-module
+[36m[2021-10-12 11:51:54 DEBUG] [python:34][39m Activity 'test-turtle-rt-module' loaded from '<string>'
+[36m[2021-10-12 11:51:54 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:51:54 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:52:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:52:04 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:52:04 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:52:04 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:52:04 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:52:04 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-12 11:52:04 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:52:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:52:04 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:52:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:52:04 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:52:04 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:52:04 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:52:04 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:52:04 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[32m[2021-10-12 11:52:04 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[32m[2021-10-12 11:52:04 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-12 11:52:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'rollback'
+[36m[2021-10-12 11:52:04 DEBUG] [python:174][39m Control 'before_rollback_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:52:04 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[32m[2021-10-12 11:52:04 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-12 11:52:04 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-12 11:52:04 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
+[36m[2021-10-12 11:52:04 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:52:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:52:13 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-12 11:52:13 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-12 11:52:13 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-12 11:52:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:52:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:52:14 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:52:14 DEBUG] [caching:35][39m Cached 9 activities
+[32m[2021-10-12 11:52:14 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-12 11:52:14 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:52:14 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:52:14 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:54:20 DEBUG] [python:167][39m Control module 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py' does not declare 'validate_control'
+[32m[2021-10-12 11:54:20 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-12 11:54:20 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:54:20 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:54:20 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2021-10-12 11:54:20 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:54:20 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:54:20 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:54:20 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-12 11:54:20 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:39][39m Initializing controls
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:48][39m Initializing control 'tracing'
+[36m[2021-10-12 11:54:20 DEBUG] [python:174][39m Control 'configure_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:54:20 DEBUG] [control:24][39m Configuring opentracing control...
+[36m[2021-10-12 11:54:20 DEBUG] [control:29][39m Creating a noop tracer
+[36m[2021-10-12 11:54:20 DEBUG] [control:269][39m The noop tracer will not send any data out
+[36m[2021-10-12 11:54:20 DEBUG] [control:41][39m OpenTracing tracer <opentracing.tracer.Tracer object at 0x00000187D9DC33A0> created
+[32m[2021-10-12 11:54:20 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-12 11:54:20 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'experiment'
+[36m[2021-10-12 11:54:20 DEBUG] [python:174][39m Control 'before_experiment_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:54:20 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-12 11:54:20 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:54:20 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:54:20 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:54:20 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:54:20 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:54:20 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 24, in steadystate
+        t.right(i)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 24, in steadystate
+        t.right(i)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1679, in right
+        self._rotate(-angle)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 3279, in _rotate
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-10-12 11:54:20 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[33m[2021-10-12 11:54:20 WARNING] [hypothesis:200][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[31m[2021-10-12 11:54:20 CRITICAL] [run:475][39m Steady state probe 'test-steady-state' is not in the given tolerance so failing this experiment
+[32m[2021-10-12 11:54:20 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-12 11:54:20 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
+[36m[2021-10-12 11:54:20 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:54:21 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:56:04 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-12 11:56:04 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-12 11:56:04 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-12 11:56:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:56:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:56:05 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:56:05 DEBUG] [caching:35][39m Cached 9 activities
+[32m[2021-10-12 11:56:05 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-12 11:56:05 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:56:05 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:56:05 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:56:09 DEBUG] [python:167][39m Control module 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py' does not declare 'validate_control'
+[32m[2021-10-12 11:56:09 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-12 11:56:09 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:56:09 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:56:09 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2021-10-12 11:56:09 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:56:09 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:56:09 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:56:09 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-12 11:56:09 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:39][39m Initializing controls
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:48][39m Initializing control 'tracing'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'configure_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:56:09 DEBUG] [control:24][39m Configuring opentracing control...
+[36m[2021-10-12 11:56:09 DEBUG] [control:29][39m Creating a noop tracer
+[36m[2021-10-12 11:56:09 DEBUG] [control:269][39m The noop tracer will not send any data out
+[36m[2021-10-12 11:56:09 DEBUG] [control:41][39m OpenTracing tracer <opentracing.tracer.Tracer object at 0x0000017617DE3970> created
+[32m[2021-10-12 11:56:09 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-12 11:56:09 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'experiment'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_experiment_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:56:09 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-12 11:56:09 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:09 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:56:09 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:56:09 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:56:09 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[32m[2021-10-12 11:56:09 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[32m[2021-10-12 11:56:09 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'method'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_method_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:09 INFO] [activity:161][39m Action: test-readconfig-module
+[36m[2021-10-12 11:56:09 DEBUG] [python:34][39m Activity 'test-readconfig-module' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py'
+[36m[2021-10-12 11:56:09 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:09 INFO] [activity:161][39m Action: test-configdict-module
+[36m[2021-10-12 11:56:09 DEBUG] [python:34][39m Activity 'test-configdict-module' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py'
+[36m[2021-10-12 11:56:09 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 179, in config_dict
+        with open(filename, "r") as f:
+    FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 179, in config_dict
+        with open(filename, "r") as f:
+    chaoslib.exceptions.ActivityFailed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+[31m[2021-10-12 11:56:09 ERROR] [activity:188][39m   => failed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:09 INFO] [activity:161][39m Action: test-onscreenclick-module
+[36m[2021-10-12 11:56:09 DEBUG] [python:34][39m Activity 'test-onscreenclick-module' loaded from '<string>'
+[36m[2021-10-12 11:56:09 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in onscreenclick
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in onscreenclick
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[31m[2021-10-12 11:56:09 ERROR] [activity:188][39m   => failed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:09 INFO] [activity:161][39m Action: test-ondrag-module
+[36m[2021-10-12 11:56:09 DEBUG] [python:34][39m Activity 'test-ondrag-module' loaded from '<string>'
+[36m[2021-10-12 11:56:09 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in ondrag
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3828, in __init__
+        Turtle._screen = Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in ondrag
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3828, in __init__
+        Turtle._screen = Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[31m[2021-10-12 11:56:09 ERROR] [activity:188][39m   => failed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[36m[2021-10-12 11:56:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:09 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-12 11:56:09 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-12 11:56:10 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:56:10 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:56:20 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:20 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:20 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-12 11:56:20 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-12 11:56:20 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:56:20 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:56:30 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:30 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:30 INFO] [activity:161][39m Action: test-turtle-left
+[36m[2021-10-12 11:56:30 DEBUG] [python:34][39m Activity 'test-turtle-left' loaded from '<string>'
+[36m[2021-10-12 11:56:30 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:56:30 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:56:40 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:40 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:40 INFO] [activity:161][39m Action: test-turtle-rt-module
+[36m[2021-10-12 11:56:40 DEBUG] [python:34][39m Activity 'test-turtle-rt-module' loaded from '<string>'
+[36m[2021-10-12 11:56:40 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:56:40 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:56:50 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:50 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:50 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:56:50 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:56:50 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:56:50 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-12 11:56:50 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:56:50 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:56:50 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:56:50 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:56:50 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:50 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:56:50 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:56:50 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:56:50 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[32m[2021-10-12 11:56:50 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[32m[2021-10-12 11:56:50 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-12 11:56:50 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'rollback'
+[36m[2021-10-12 11:56:50 DEBUG] [python:174][39m Control 'before_rollback_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:56:50 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[32m[2021-10-12 11:56:50 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-12 11:56:50 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-12 11:56:50 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
+[36m[2021-10-12 11:56:50 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:56:51 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:57:30 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-10-12 11:57:30 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-10-12 11:57:30 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-10-12 11:57:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:57:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-10-12 11:57:32 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:57:32 DEBUG] [caching:35][39m Cached 9 activities
+[32m[2021-10-12 11:57:32 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-10-12 11:57:32 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:57:32 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:57:32 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:57:39 DEBUG] [python:167][39m Control module 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py' does not declare 'validate_control'
+[32m[2021-10-12 11:57:39 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-10-12 11:57:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-10-12 11:57:39 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-10-12 11:57:39 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2021-10-12 11:57:39 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-10-12 11:57:39 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-10-12 11:57:39 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-10-12 11:57:39 DEBUG] [exit:89][39m System 'Windows-10-10.0.19042-SP0' does not expose SIGUSR signals
+[32m[2021-10-12 11:57:39 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:39][39m Initializing controls
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:48][39m Initializing control 'tracing'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'configure_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:57:39 DEBUG] [control:24][39m Configuring opentracing control...
+[36m[2021-10-12 11:57:39 DEBUG] [control:29][39m Creating a noop tracer
+[36m[2021-10-12 11:57:39 DEBUG] [control:269][39m The noop tracer will not send any data out
+[36m[2021-10-12 11:57:39 DEBUG] [control:41][39m OpenTracing tracer <opentracing.tracer.Tracer object at 0x0000021D57A58640> created
+[32m[2021-10-12 11:57:39 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-10-12 11:57:39 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'experiment'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_experiment_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:57:39 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-10-12 11:57:39 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:39 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:57:39 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:57:39 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:57:39 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[32m[2021-10-12 11:57:39 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[32m[2021-10-12 11:57:39 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'method'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_method_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:39 INFO] [activity:161][39m Action: test-readconfig-module
+[36m[2021-10-12 11:57:39 DEBUG] [python:34][39m Activity 'test-readconfig-module' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py'
+[36m[2021-10-12 11:57:39 DEBUG] [activity:182][39m   => succeeded without any result value
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:39 INFO] [activity:161][39m Action: test-configdict-module
+[36m[2021-10-12 11:57:39 DEBUG] [python:34][39m Activity 'test-configdict-module' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py'
+[36m[2021-10-12 11:57:39 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 179, in config_dict
+        with open(filename, "r") as f:
+    FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 179, in config_dict
+        with open(filename, "r") as f:
+    chaoslib.exceptions.ActivityFailed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+[31m[2021-10-12 11:57:39 ERROR] [activity:188][39m   => failed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:39 INFO] [activity:161][39m Action: test-onscreenclick-module
+[36m[2021-10-12 11:57:39 DEBUG] [python:34][39m Activity 'test-onscreenclick-module' loaded from '<string>'
+[36m[2021-10-12 11:57:39 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in onscreenclick
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in onscreenclick
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[31m[2021-10-12 11:57:39 ERROR] [activity:188][39m   => failed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:39 INFO] [activity:161][39m Action: test-ondrag-module
+[36m[2021-10-12 11:57:39 DEBUG] [python:34][39m Activity 'test-ondrag-module' loaded from '<string>'
+[36m[2021-10-12 11:57:39 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in ondrag
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3828, in __init__
+        Turtle._screen = Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "<string>", line 6, in ondrag
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3828, in __init__
+        Turtle._screen = Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3678, in Screen
+        Turtle._screen = _Screen()
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 3704, in __init__
+        self._root.setupcanvas(width, height, canvwidth, canvheight)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\turtletest.py", line 447, in setupcanvas
+        self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)
+    chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[31m[2021-10-12 11:57:39 ERROR] [activity:188][39m   => failed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given
+[36m[2021-10-12 11:57:39 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:39 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:39 INFO] [activity:161][39m Action: test-turtle-forward-module
+[36m[2021-10-12 11:57:39 DEBUG] [python:34][39m Activity 'test-turtle-forward-module' loaded from '<string>'
+[36m[2021-10-12 11:57:39 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:57:39 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:57:49 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:49 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:49 INFO] [activity:161][39m Action: test-turtle-backward-module
+[36m[2021-10-12 11:57:49 DEBUG] [python:34][39m Activity 'test-turtle-backward-module' loaded from '<string>'
+[36m[2021-10-12 11:57:49 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:57:49 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:57:59 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:57:59 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:57:59 INFO] [activity:161][39m Action: test-turtle-left
+[36m[2021-10-12 11:57:59 DEBUG] [python:34][39m Activity 'test-turtle-left' loaded from '<string>'
+[36m[2021-10-12 11:57:59 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:57:59 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:58:09 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:58:09 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:58:09 INFO] [activity:161][39m Action: test-turtle-rt-module
+[36m[2021-10-12 11:58:09 DEBUG] [python:34][39m Activity 'test-turtle-rt-module' loaded from '<string>'
+[36m[2021-10-12 11:58:09 DEBUG] [activity:182][39m   => succeeded without any result value
+[32m[2021-10-12 11:58:09 INFO] [activity:198][39m Pausing after activity for 10s...
+[36m[2021-10-12 11:58:19 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:58:19 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:58:19 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:58:19 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:58:19 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:58:19 DEBUG] [run:494][39m Running steady-state hypothesis after the method
+[32m[2021-10-12 11:58:19 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-10-12 11:58:19 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-10-12 11:58:19 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:58:19 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-10-12 11:58:19 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:58:19 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-10-12 11:58:19 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-10-12 11:58:19 DEBUG] [activity:180][39m   => succeeded with '15'
+[36m[2021-10-12 11:58:19 DEBUG] [hypothesis:211][39m allowed tolerance is 15
+[32m[2021-10-12 11:58:19 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[32m[2021-10-12 11:58:19 INFO] [run:807][39m Let's rollback...
+[36m[2021-10-12 11:58:19 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'rollback'
+[36m[2021-10-12 11:58:19 DEBUG] [python:174][39m Control 'before_rollback_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-10-12 11:58:19 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[32m[2021-10-12 11:58:19 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-10-12 11:58:19 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-10-12 11:58:19 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
+[36m[2021-10-12 11:58:19 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-10-12 11:58:20 DEBUG] [caching:42][39m Clearing activities cache
