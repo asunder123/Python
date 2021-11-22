@@ -1,6 +1,6 @@
 {
   "chaoslib-version": "1.21.0",
-  "platform": "Windows-10-10.0.19042-SP0",
+  "platform": "Windows-10-10.0.19043-SP0",
   "node": "LNAR-5CD9051V6X",
   "experiment": {
     "title": "Moving a file from under our feet is forgivable",
@@ -154,12 +154,12 @@
     ],
     "dry": false
   },
-  "start": "2021-10-12T06:27:39.151618",
-  "status": "completed",
+  "start": "2021-11-22T10:44:22.339971",
+  "status": "failed",
   "deviated": false,
   "steady_states": {
     "before": {
-      "steady_state_met": true,
+      "steady_state_met": false,
       "probes": [
         {
           "activity": {
@@ -175,261 +175,28 @@
               }
             }
           },
-          "output": 15,
-          "status": "succeeded",
-          "start": "2021-10-12T06:27:39.153653",
-          "end": "2021-10-12T06:27:39.166419",
-          "duration": 0.012766,
-          "tolerance_met": true
+          "output": null,
+          "status": "failed",
+          "exception": [
+            "Traceback (most recent call last):\n",
+            "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 30, in steadystate\n    t.down(i)\n",
+            "TypeError: pendown() takes 1 positional argument but 2 were given\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "chaoslib.exceptions.ActivityFailed: TypeError: pendown() takes 1 positional argument but 2 were given\n"
+          ],
+          "start": "2021-11-22T10:44:22.345117",
+          "end": "2021-11-22T10:44:22.346138",
+          "duration": 0.001021,
+          "tolerance_met": false
         }
       ]
     },
-    "after": {
-      "steady_state_met": true,
-      "probes": [
-        {
-          "activity": {
-            "name": "test-steady-state",
-            "type": "probe",
-            "tolerance": 15,
-            "provider": {
-              "type": "python",
-              "module": "recursionVisualizer",
-              "func": "steadystate",
-              "arguments": {
-                "i": 15
-              }
-            }
-          },
-          "output": 15,
-          "status": "succeeded",
-          "start": "2021-10-12T06:28:19.735764",
-          "end": "2021-10-12T06:28:19.750323",
-          "duration": 0.014559,
-          "tolerance_met": true
-        }
-      ]
-    },
+    "after": null,
     "during": []
   },
-  "run": [
-    {
-      "activity": {
-        "name": "test-readconfig-module",
-        "type": "action",
-        "provider": {
-          "type": "python",
-          "module": "turtletest",
-          "func": "readconfig",
-          "arguments": {
-            "cfgdict": "default.cfg"
-          }
-        }
-      },
-      "output": null,
-      "status": "succeeded",
-      "start": "2021-10-12T06:27:39.167427",
-      "end": "2021-10-12T06:27:39.168546",
-      "duration": 0.001119
-    },
-    {
-      "activity": {
-        "name": "test-configdict-module",
-        "type": "action",
-        "provider": {
-          "type": "python",
-          "module": "turtletest",
-          "func": "config_dict",
-          "arguments": {
-            "filename": "test.py"
-          }
-        }
-      },
-      "output": null,
-      "status": "failed",
-      "exception": [
-        "Traceback (most recent call last):\n",
-        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 179, in config_dict\n    with open(filename, \"r\") as f:\n",
-        "FileNotFoundError: [Errno 2] No such file or directory: 'test.py'\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: FileNotFoundError: [Errno 2] No such file or directory: 'test.py'\n"
-      ],
-      "start": "2021-10-12T06:27:39.168563",
-      "end": "2021-10-12T06:27:39.171599",
-      "duration": 0.003036
-    },
-    {
-      "activity": {
-        "name": "test-onscreenclick-module",
-        "type": "action",
-        "provider": {
-          "type": "python",
-          "module": "turtletest",
-          "func": "onscreenclick",
-          "arguments": {
-            "fun": "None"
-          }
-        }
-      },
-      "output": null,
-      "status": "failed",
-      "exception": [
-        "Traceback (most recent call last):\n",
-        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-        "  File \"<string>\", line 6, in onscreenclick\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3678, in Screen\n    Turtle._screen = _Screen()\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3704, in __init__\n    self._root.setupcanvas(width, height, canvwidth, canvheight)\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 447, in setupcanvas\n    self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)\n",
-        "TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
-      ],
-      "start": "2021-10-12T06:27:39.171599",
-      "end": "2021-10-12T06:27:39.254636",
-      "duration": 0.083037
-    },
-    {
-      "activity": {
-        "name": "test-ondrag-module",
-        "type": "action",
-        "provider": {
-          "type": "python",
-          "module": "turtletest",
-          "func": "ondrag",
-          "arguments": {
-            "fun": "None"
-          }
-        }
-      },
-      "output": null,
-      "status": "failed",
-      "exception": [
-        "Traceback (most recent call last):\n",
-        "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-        "  File \"<string>\", line 6, in ondrag\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3828, in __init__\n    Turtle._screen = Screen()\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3678, in Screen\n    Turtle._screen = _Screen()\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 3704, in __init__\n    self._root.setupcanvas(width, height, canvwidth, canvheight)\n",
-        "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\turtletest.py\", line 447, in setupcanvas\n    self._canvas = ScrolledCanvas(self, width, height, cwidth, cheight)\n",
-        "TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n",
-        "\nDuring handling of the above exception, another exception occurred:\n\n",
-        "chaoslib.exceptions.ActivityFailed: TypeError: __init__() takes from 1 to 3 positional arguments but 6 were given\n"
-      ],
-      "start": "2021-10-12T06:27:39.255601",
-      "end": "2021-10-12T06:27:39.256634",
-      "duration": 0.001033
-    },
-    {
-      "activity": {
-        "type": "action",
-        "name": "test-turtle-forward-module",
-        "provider": {
-          "type": "python",
-          "module": "turtle",
-          "func": "forward",
-          "arguments": {
-            "distance": 34
-          }
-        },
-        "pauses": {
-          "after": 10
-        }
-      },
-      "output": null,
-      "status": "succeeded",
-      "start": "2021-10-12T06:27:39.256634",
-      "end": "2021-10-12T06:27:39.337650",
-      "duration": 0.081016
-    },
-    {
-      "activity": {
-        "type": "action",
-        "name": "test-turtle-backward-module",
-        "provider": {
-          "type": "python",
-          "module": "turtle",
-          "func": "backward",
-          "arguments": {
-            "distance": 56
-          }
-        },
-        "pauses": {
-          "after": 10
-        }
-      },
-      "output": null,
-      "status": "succeeded",
-      "start": "2021-10-12T06:27:49.349884",
-      "end": "2021-10-12T06:27:49.457206",
-      "duration": 0.107322
-    },
-    {
-      "activity": {
-        "type": "action",
-        "name": "test-turtle-left",
-        "provider": {
-          "type": "python",
-          "module": "turtle",
-          "func": "left",
-          "arguments": {
-            "angle": 45
-          }
-        },
-        "pauses": {
-          "after": 10
-        }
-      },
-      "output": null,
-      "status": "succeeded",
-      "start": "2021-10-12T06:27:59.462088",
-      "end": "2021-10-12T06:27:59.572058",
-      "duration": 0.10997
-    },
-    {
-      "activity": {
-        "type": "action",
-        "name": "test-turtle-rt-module",
-        "provider": {
-          "type": "python",
-          "module": "turtle",
-          "func": "right",
-          "arguments": {
-            "angle": 45
-          }
-        },
-        "pauses": {
-          "after": 10
-        }
-      },
-      "output": null,
-      "status": "succeeded",
-      "start": "2021-10-12T06:28:09.580519",
-      "end": "2021-10-12T06:28:09.689861",
-      "duration": 0.109342
-    },
-    {
-      "activity": {
-        "name": "test-steady-state",
-        "type": "probe",
-        "tolerance": 15,
-        "provider": {
-          "type": "python",
-          "module": "recursionVisualizer",
-          "func": "steadystate",
-          "arguments": {
-            "i": 15
-          }
-        }
-      },
-      "output": 15,
-      "status": "succeeded",
-      "start": "2021-10-12T06:28:19.705760",
-      "end": "2021-10-12T06:28:19.733740",
-      "duration": 0.02798
-    }
-  ],
+  "run": [],
   "rollbacks": [],
-  "end": "2021-10-12T06:28:19.755331",
-  "duration": 40.603713035583496
+  "end": "2021-11-22T10:44:22.347151",
+  "duration": 0.007180452346801758
 }

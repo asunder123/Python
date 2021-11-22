@@ -14,64 +14,118 @@ __all__ = ["cycle","tree","fractal","rec","line","steadystate"]
 t = turtle.Turtle()
 num=random.randint(900,1000)
 t.right(num)
-t.speed(100*num)
-t.left(num) 
+t.speed(1000*num)
+t.left(num)
+win = turtle.Screen()
+win.bgcolor("blue")
+win.setup(500,500)
+win.title("setup")
 
 def steadystate(i: int, configuration: Configuration = None, secrets: Secrets=None)->Any:
-    if i<10:
+    if i<15:
         return
-    else:  
+    else: 
         t.right(i)
-        return i
+        t.left(i)
+        t.down(i)
+        t.up(i)
+        return tree(i)
 
 
+def setup(i: int, configuration: Configuration = None, secrets: Secrets=None)->Any:
+    if i<15:
+       return 
+    else:
+        win = turtle.Screen()
+        win.bgcolor("yellow")
+        win.setup(height=1000,length=2000)
+        win.title("setup")
 
 def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
     if i<10:
         return
     else:
-        t.right(20)
+        setup(1)
+        t.right(90)
         turtle.heading()
         t.forward(15)
         while i>0:
+         t.pencolor("red")
+         t.onclick(t.goto)
+         t.circle(10*i)
+         t.seth(-2.5*i)
          t.pencolor("black")
-         t.circle(i)
-         i-=50
+         t.right(90)
+         t.seth(4.5*i)
+         t.circle(10*i)
+         t.pencolor("green")
+         #t.forward(2*i)
+         t.left(90)
+         t.circle(5*i)
+         t.seth(2.5*i)
+         t.onclick(t.goto)
+         for i in range(num1):
+             for j in range(i):
+              t.pencolor("white")
+              t.forward(i)
+              t.left(90)
+              t.pencolor("orange")
+              t.circle(10*j)
+              t.pencolor("green")
+         for k in range(i):
+          for j in range(k):
+            for l in range(j):
+             t.pencolor("black")
+             t.forward(k)
+             t.circle(l)
+             t.right(90)
+             t.seth(45)
+             t.circle(10*l)
+             t.backward(k)
+         t.onclick(t.goto)
+         t.right(45)
+         #t.forward(-2*i)
+         t.circle(i*10)
+         t.pencolor("yellow")
+         t.seth(45)
+         t.circle(10)
+         t.onclick(t.goto)
+         i-=5
         tree(5) 
         t.left(20)
         while i>0:
          t.pencolor("yellow")
-         t.circle(i*2)
-         i-=50
+         t.circle(20)
+         i-=5
         tree(5)
         t.position()
         t.backward(15)
         while i>0:
          t.pencolor("black")
-         t.circle(i*3)
-         i-=50
+         t.circle(30)
+         i-=5
         t.right(20)
         tree(5)
         while i>0:
          t.pencolor("yellow")
-         t.circle(i*4)
+         t.circle(40)
          tree(i/2)
-         i-=50
+         i-=5
         tree(7)
         print(t.pos())
-        t.pencolor("blue")
+        t.pencolor("white")
         while (50-i)>0 and i>0:
          if (50-i)>0 and i>0:
-                            tree(i/5)
+                            tree(i)
                             t.circle(50-i)
-                            i-=1
-                            t.right(i)
-                            i=i-1
+                            i-=5
+                            t.right(90)
+                            i=i-5
                             t.forward(i)
-                            i=i-1
-                            t.left(i)
-                            i=i-1
-                            t.right(i)
+                            i=i-5
+                            t.left(90)
+                            i=i-5
+                            t.right(90)
          else:
              return
         print('Circle with radius',50-i)
@@ -98,11 +152,11 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
         print("shift to red")
         if (50-i)>0 and i>0:
                            t.circle(50-i)
-                           t.right(i)
+                           t.right(90)
                            t.forward(i)
                            t.backward(i)
-                           t.left(i)
-                           i-=1
+                           t.left(90)
+                           i-=5
         else:
             return 
         print('Diminishing circle red',10-i)
@@ -112,11 +166,11 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
         print("shift to yellow")
         tree(num)
         print("End of random tree")
-        t.pencolor("blue")
-        print('shift to blue')
-        t.right(i)
         t.pencolor("green")
         print('shift to green')
+        t.right(90)
+        t.pencolor("white")
+        print('shift to white')
         while num>0:
          if num>0:
           tree(num)
@@ -132,49 +186,49 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
          if (10-i)>0:
           t.circle(10-i)
           t.forward(i)
-          i-=2
+          i-=5
          else:
           return    
         print('Diminishing circle with radius',10-i)
         while (10+i)>0 and i>0:
          if (10+i)>0:
           t.circle(10+i)
-          t.left(i)
-          i-=2
+          t.left(90)
+          i-=5
          else:
           return   
         print('Diminishing circle with radius',10+i)
         while (10-i)>0 and i>0:
          t.circle(10-i)
          t.backward(i)
-         i-=2
+         i-=5
         print('Diminishing circle with radius',10+i)
         while (10+i)>0 and i>0:
          t.circle(10+i)
-         i-=2
+         i-=5
         print('Diminishing circle with radius',10+i)
         tree(random.randint(1,num))
         t.forward(num/5)
         while (2+i)>0 and (50-i)>0 and i>0:
-         t.right(2+i)
+         t.right(90)
          t.circle(50-i)
-         i-=1
+         i-=5
         t.pencolor("green")
         while (10+i)>0 and (50-i)>0 and i>0:
-         t.left(10+i)
+         t.left(90)
          t.circle(50-i)
-         i-=1
+         i-=5
         while (10-i)>0 and i>0:
          t.backward(10-i)
-         i-=1
+         i-=5
         while (15-i)>0 and (50-i)>0 and i>0:
-         t.right(15-i)
+         t.right(90)
          t.circle(50-i)
-         i-=1
+         i-=5
         while(15-i)>0 and (50-i)>0 and i>0:
-         t.forward(15-i)
+         t.forward(90)
          t.circle(50-i)
-         i-=1
+         i-=5
         print('tree execution complete')
         pass
 
@@ -239,11 +293,13 @@ num1=int(val)
 def rec(num1:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
  try:
   while num1>0:  
-   t.right(num1/5)
-   t.backward(num1/5)
+   t.right(num1)
+   t.backward(num1)
    fractal(num1)
-   t.left(num1/5)
-   t.right(num1/5)
+   #t.onclick(t.goto)
+   print("Goto...",t.pos())
+   t.left(num1)
+   t.right(num1)
    num1-=5
  except:
   print('Fractal exception') 
