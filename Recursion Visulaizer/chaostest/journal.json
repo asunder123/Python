@@ -154,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-11-22T10:44:22.339971",
+  "start": "2021-11-23T16:48:57.159271",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -180,14 +180,21 @@
           "exception": [
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 30, in steadystate\n    t.down(i)\n",
-            "TypeError: pendown() takes 1 positional argument but 2 were given\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    return fractal(i)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 260, in fractal\n    t.tilt(30)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2911, in tilt\n    self.settiltangle(angle + self.tiltangle())\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2866, in settiltangle\n    self.pen(resizemode=\"user\", tilt=tilt)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2460, in pen\n    self._update()\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2661, in _update\n    self._update_data()\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2647, in _update_data\n    self.screen._incrementudc()\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1293, in _incrementudc\n    raise Terminator\n",
+            "turtle.Terminator\n",
             "\nDuring handling of the above exception, another exception occurred:\n\n",
-            "chaoslib.exceptions.ActivityFailed: TypeError: pendown() takes 1 positional argument but 2 were given\n"
+            "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
           ],
-          "start": "2021-11-22T10:44:22.345117",
-          "end": "2021-11-22T10:44:22.346138",
-          "duration": 0.001021,
+          "start": "2021-11-23T16:48:57.164433",
+          "end": "2021-11-23T16:48:57.379937",
+          "duration": 0.215504,
           "tolerance_met": false
         }
       ]
@@ -197,6 +204,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-11-22T10:44:22.347151",
-  "duration": 0.007180452346801758
+  "end": "2021-11-23T16:48:57.380926",
+  "duration": 0.22165513038635254
 }
