@@ -31728,3 +31728,195 @@
 [36m[2021-11-23 22:18:57 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
 [36m[2021-11-23 22:18:57 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
 [36m[2021-11-23 22:18:58 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-11-23 22:29:13 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-11-23 22:29:13 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-11-23 22:29:13 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-11-23 22:29:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-11-23 22:29:14 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-11-23 22:29:14 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-11-23 22:29:14 DEBUG] [caching:35][39m Cached 9 activities
+[32m[2021-11-23 22:29:14 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-11-23 22:29:14 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-11-23 22:29:14 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-11-23 22:29:14 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-11-23 22:32:04 DEBUG] [python:167][39m Control module 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py' does not declare 'validate_control'
+[32m[2021-11-23 22:32:04 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-11-23 22:32:04 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-11-23 22:32:04 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-11-23 22:32:04 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2021-11-23 22:32:04 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-11-23 22:32:04 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-11-23 22:32:04 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-11-23 22:32:04 DEBUG] [exit:89][39m System 'Windows-10-10.0.19043-SP0' does not expose SIGUSR signals
+[32m[2021-11-23 22:32:04 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:39][39m Initializing controls
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:48][39m Initializing control 'tracing'
+[36m[2021-11-23 22:32:04 DEBUG] [python:174][39m Control 'configure_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:32:04 DEBUG] [control:24][39m Configuring opentracing control...
+[36m[2021-11-23 22:32:04 DEBUG] [control:29][39m Creating a noop tracer
+[36m[2021-11-23 22:32:04 DEBUG] [control:269][39m The noop tracer will not send any data out
+[36m[2021-11-23 22:32:04 DEBUG] [control:41][39m OpenTracing tracer <opentracing.tracer.Tracer object at 0x000001E0A1950EB0> created
+[32m[2021-11-23 22:32:04 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-11-23 22:32:04 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'experiment'
+[36m[2021-11-23 22:32:04 DEBUG] [python:174][39m Control 'before_experiment_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:32:04 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-11-23 22:32:04 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-11-23 22:32:04 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-11-23 22:32:04 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-11-23 22:32:04 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-11-23 22:32:04 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-11-23 22:32:04 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 28, in steadystate
+        return fractal(i)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 263, in fractal
+        t.tilt(30)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2911, in tilt
+        self.settiltangle(angle + self.tiltangle())
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2866, in settiltangle
+        self.pen(resizemode="user", tilt=tilt)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2460, in pen
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 28, in steadystate
+        return fractal(i)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 263, in fractal
+        t.tilt(30)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2911, in tilt
+        self.settiltangle(angle + self.tiltangle())
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2866, in settiltangle
+        self.pen(resizemode="user", tilt=tilt)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2460, in pen
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-11-23 22:32:04 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[33m[2021-11-23 22:32:04 WARNING] [hypothesis:200][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[31m[2021-11-23 22:32:04 CRITICAL] [run:475][39m Steady state probe 'test-steady-state' is not in the given tolerance so failing this experiment
+[32m[2021-11-23 22:32:04 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-11-23 22:32:04 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
+[36m[2021-11-23 22:32:04 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:32:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-11-23 22:32:09 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-11-23 22:32:09 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-11-23 22:32:09 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[36m[2021-11-23 22:32:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-11-23 22:32:10 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-11-23 22:32:10 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-11-23 22:32:10 DEBUG] [caching:35][39m Cached 9 activities
+[32m[2021-11-23 22:32:10 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-11-23 22:32:10 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-11-23 22:32:10 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-11-23 22:32:10 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-11-23 22:43:27 DEBUG] [python:167][39m Control module 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py' does not declare 'validate_control'
+[32m[2021-11-23 22:43:27 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-11-23 22:43:27 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-11-23 22:43:27 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-11-23 22:43:27 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2021-11-23 22:43:27 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-11-23 22:43:27 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-11-23 22:43:27 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-11-23 22:43:27 DEBUG] [exit:89][39m System 'Windows-10-10.0.19043-SP0' does not expose SIGUSR signals
+[32m[2021-11-23 22:43:27 INFO] [run:321][39m Running experiment: Moving a file from under our feet is forgivable
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:39][39m Initializing controls
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:48][39m Initializing control 'tracing'
+[36m[2021-11-23 22:43:27 DEBUG] [python:174][39m Control 'configure_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:43:27 DEBUG] [control:24][39m Configuring opentracing control...
+[36m[2021-11-23 22:43:27 DEBUG] [control:29][39m Creating a noop tracer
+[36m[2021-11-23 22:43:27 DEBUG] [control:269][39m The noop tracer will not send any data out
+[36m[2021-11-23 22:43:27 DEBUG] [control:41][39m OpenTracing tracer <opentracing.tracer.Tracer object at 0x000002544C1A4FA0> created
+[32m[2021-11-23 22:43:27 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-11-23 22:43:27 INFO] [run:343][39m Rollbacks strategy: default
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'experiment'
+[36m[2021-11-23 22:43:27 DEBUG] [python:174][39m Control 'before_experiment_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:43:27 DEBUG] [run:464][39m Running steady-state hypothesis before the method
+[32m[2021-11-23 22:43:27 INFO] [hypothesis:183][39m Steady state hypothesis: Validate Steady state
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'hypothesis'
+[36m[2021-11-23 22:43:27 DEBUG] [python:174][39m Control 'before_hypothesis_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:365][39m Applying before-control 'tracing' on 'activity'
+[36m[2021-11-23 22:43:27 DEBUG] [python:174][39m Control 'before_activity_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[32m[2021-11-23 22:43:27 INFO] [activity:161][39m Probe: test-steady-state
+[36m[2021-11-23 22:43:27 DEBUG] [python:34][39m Activity 'test-steady-state' loaded from 'C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py'
+[36m[2021-11-23 22:43:27 DEBUG] [activity:235][39m Activity failed
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 28, in steadystate
+        return fractal(i)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 263, in fractal
+        t.tilt(30)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2911, in tilt
+        self.settiltangle(angle + self.tiltangle())
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2866, in settiltangle
+        self.pen(resizemode="user", tilt=tilt)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2460, in pen
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    turtle.Terminator
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\activity.py", line 228, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 57, in run_python_activity
+        raise ActivityFailed(
+      File "C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaoslib\provider\python.py", line 55, in run_python_activity
+        return func(**arguments)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 28, in steadystate
+        return fractal(i)
+      File "C:\Users\asunder\Python\Recursion Visulaizer\chaostest\recursionVisualizer.py", line 263, in fractal
+        t.tilt(30)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2911, in tilt
+        self.settiltangle(angle + self.tiltangle())
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2866, in settiltangle
+        self.pen(resizemode="user", tilt=tilt)
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2460, in pen
+        self._update()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2661, in _update
+        self._update_data()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 2647, in _update_data
+        self.screen._incrementudc()
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\turtle.py", line 1293, in _incrementudc
+        raise Terminator
+    chaoslib.exceptions.ActivityFailed: turtle.Terminator
+[31m[2021-11-23 22:43:27 ERROR] [activity:188][39m   => failed: turtle.Terminator
+[33m[2021-11-23 22:43:27 WARNING] [hypothesis:200][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[31m[2021-11-23 22:43:27 CRITICAL] [run:475][39m Steady state probe 'test-steady-state' is not in the given tolerance so failing this experiment
+[32m[2021-11-23 22:43:27 INFO] [run:419][39m Experiment ended with status: failed
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-11-23 22:43:27 DEBUG] [__init__:81][39m Cleaning up control 'tracing'
+[36m[2021-11-23 22:43:27 DEBUG] [python:174][39m Control 'cleanup_control' loaded from 'C:\Users\asunder\.venvs\chaostk\lib\site-packages\chaostracing\control.py'
+[36m[2021-11-23 22:43:28 DEBUG] [caching:42][39m Clearing activities cache

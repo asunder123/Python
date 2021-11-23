@@ -70,8 +70,11 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               t.pencolor("orange")
               if i==j:
                t.circle(j*i)
+               t.left(90)
               else:
-               t.circle(i*i)
+               t.pencolor("green")
+               t.circle(j*j)
+               t.left(90)
               #if (i%j == 0):
                #for k in range(100):
                 #t.forward((j/i)+1)
