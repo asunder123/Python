@@ -154,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-11-23T17:13:27.931522",
+  "start": "2021-11-24T01:36:52.317077",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -181,7 +181,7 @@
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
             "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    return fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 263, in fractal\n    t.tilt(30)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 264, in fractal\n    t.tilt(30)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2911, in tilt\n    self.settiltangle(angle + self.tiltangle())\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2866, in settiltangle\n    self.pen(resizemode=\"user\", tilt=tilt)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2460, in pen\n    self._update()\n",
@@ -192,9 +192,9 @@
             "\nDuring handling of the above exception, another exception occurred:\n\n",
             "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
           ],
-          "start": "2021-11-23T17:13:27.935556",
-          "end": "2021-11-23T17:13:27.938559",
-          "duration": 0.003003,
+          "start": "2021-11-24T01:36:52.317077",
+          "end": "2021-11-24T01:36:52.332634",
+          "duration": 0.015557,
           "tolerance_met": false
         }
       ]
@@ -204,6 +204,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-11-23T17:13:27.939557",
-  "duration": 0.008034706115722656
+  "end": "2021-11-24T01:36:52.332634",
+  "duration": 0.015557050704956055
 }
