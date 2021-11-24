@@ -69,8 +69,8 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               #t.right(45)
               if i>j:
                    t.pencolor("orange")
-                   t.circle(j*i*num1)
-                   t.left(45)
+                   t.circle(j*i*j)
+                   t.left(90)
                    print('Shift to squaring')
                    t.pencolor("green")
                    t.forward(j)
@@ -78,12 +78,12 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                    print("Position is ",t.pos())
                    if j%4==0:
                     for k in range(4):
-                     t.pencolor("red")
-                     t.forward(j*i*num1-1)
+                     t.pencolor("white")
+                     t.forward(j*j*j)
                      t.right(90)
               else:
                   for j in range(i):
-                   t.pencolor("green")
+                   t.pencolor("black")
                    t.circle(j*j*j)
                    t.left(45)
               #if (i%j == 0):
@@ -104,7 +104,7 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                  for n in range(m):
                   t.circle(l*l*l)
                   t.pencolor("red")
-                  t.forward(random.int(1,n))
+                  t.forward(n)
                   t.left(90)
          t.onclick(t.goto)
          t.right(45)
@@ -277,13 +277,11 @@ def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None
         return
     else:
         while i>1:
+         t.pencolor("white")   
          cycle(random.randint(1,i+1))
          t.pencolor("green")
-         t.circle(500-i)
-         cycle(random.randint(1,i))
-         i-=1
+         cycle(random.randint(1,i-1))
         print('Exit final while loop')
-        t.tilt(45)
         print('fractal execution complete')
         pass
 
