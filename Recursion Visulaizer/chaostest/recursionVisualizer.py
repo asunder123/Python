@@ -70,15 +70,17 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               t.right(45)
               if i>j:
                    t.pencolor("orange")
-                   t.circle(i*j*num1-i*num1-i*j)
+                   t.circle(i*j*num1)
                    for j in range(num1):
-                    t.pencolor("violet")
+                    t.pencolor("green")
                     v=int(j/i)
-                    while v<20:
+                    while v<15:
                      t.forward(v)
                      t.left(90)
                      v+=1
                      j+=1
+                     if v>50:
+                      tree(v)
                    print('Shift to squaring')
                    t.pencolor("green")
                    t.forward(j)
