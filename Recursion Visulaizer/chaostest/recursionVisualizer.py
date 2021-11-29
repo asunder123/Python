@@ -74,13 +74,29 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                    for j in range(num1):
                     t.pencolor("green")
                     v=int(j/i)
-                    while v<15:
+                    while v<=int(j/(2*i)):
+                     t.pencolor("green")
                      t.forward(v)
                      t.left(90)
+                     tree(v/2)
                      v+=1
                      j+=1
-                     if v>50:
-                      tree(v)
+                     break
+                     if v>int(j/(2*i)):
+                      tree(v/5)
+                      break
+                    while v<=int(3*j/4*i):
+                     t.pencolor("red")
+                     t.forward(v)
+                     t.left(60)
+                     tree(3*v/4)
+                     t.backward(v-1)
+                     v+=1
+                     j+=1
+                     break
+                     if v>int(3*j/4*i):
+                      tree(2*v/5)
+                      break
                    print('Shift to squaring')
                    t.pencolor("green")
                    t.forward(j)
