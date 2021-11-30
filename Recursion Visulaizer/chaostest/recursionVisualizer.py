@@ -54,12 +54,12 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
          t.right(90)
          #t.seth(-i*i)
          t.circle(i*i*i)
-         t.pencolor("green")
+         #t.pencolor("green")
          #t.forward(2.5*i)
-         t.left(45)
-         t.circle(i*i*i)
+         #t.left(45)
+         #t.circle(i*i*i)
          #t.seth(i*i)
-         i+=1
+         #i+=1
          #t.onclick(t.goto)
          for i in range(num1):
              for j in range(i):
@@ -71,38 +71,35 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               if i>j:
                    t.pencolor("orange")
                    t.circle(i*j*num1)
+                   v=int(j/i)
                    for j in range(num1):
-                    t.pencolor("green")
-                    v=int(j/i)
-                    while v<=int(j/(2*i)):
-                     t.pencolor("green")
-                     t.forward(v)
-                     t.left(90)
-                     tree(v/2)
-                     v+=1
-                     j+=1
-                     break
-                     if v>int(j/(2*i)):
-                      tree(v/5)
-                      break
-                    while v<=int(3*j/4*i):
-                     t.pencolor("red")
-                     t.forward(v)
-                     t.left(60)
-                     tree(3*v/4)
-                     t.backward(v-1)
-                     v+=1
-                     j+=1
-                     break
-                     if v>int(3*j/4*i):
-                      tree(2*v/5)
-                      break
-                   print('Shift to squaring')
-                   t.pencolor("green")
-                   t.forward(j)
-                   t.right(90)
+                       for m in range(j):
+                        t.pencolor("green")
+                        t.forward(j)
+                        t.left(int(j/i))
+                        t.backward(j-1)
+                        j+=2
+                   while j<=num1-2:
+                         for k in range(6):
+                          t.pencolor("red")
+                          t.forward(k)
+                          t.left(60)
+                          t.backward(k)
+                          t.left(60)
+                          t.forward(k)
+                          v+=1
+                          j+=1
+                          break
+                   if j>num1-1:
+                     tree(j)
+                     #j-=1
+                     continue
+                   #print('Shift to squaring')
+                   #t.pencolor("green")
+                   #t.forward(j)
+                   #t.right(90)
                    print("Position is ",t.pos())
-                   if j%4==0:
+                   if j%5==0:
                     for k in range(4):
                      t.pencolor("white")
                      t.forward(j*i*num1)
@@ -117,6 +114,7 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                 #t.forward((j/i)+1)
                 #t.left(90)
               t.right(90)
+              t.forward(j)
               t.pencolor("green")
          for k in range(i):
           for j in range(k):
@@ -154,10 +152,9 @@ def cycle(i:int,configuration: Configuration=None,secrets: Secrets=None)->None:
         try:
             tree(i)
         except:
-            print('An exception occured')
+            print('Cycle loop exception occured')
         else:
             print('No Exception occured')   
-        print('cycle loop complete')
         pass
 
 def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None:

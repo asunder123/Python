@@ -154,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-11-29T17:20:51.576961",
+  "start": "2021-11-30T15:30:49.161932",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -181,7 +181,7 @@
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
             "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 171, in fractal\n    t.pencolor(\"green\")\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 168, in fractal\n    t.pencolor(\"green\")\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2253, in pencolor\n    color = self._colorstr(args)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2697, in _colorstr\n    return self.screen._colorstr(args)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1159, in _colorstr\n    raise TurtleGraphicsError(\"bad color string: %s\" % str(color))\n",
@@ -189,9 +189,9 @@
             "\nDuring handling of the above exception, another exception occurred:\n\n",
             "chaoslib.exceptions.ActivityFailed: turtle.TurtleGraphicsError: bad color string: green\n"
           ],
-          "start": "2021-11-29T17:20:51.580960",
-          "end": "2021-11-29T17:23:49.702192",
-          "duration": 178.121232,
+          "start": "2021-11-30T15:30:49.161932",
+          "end": "2021-11-30T15:52:44.957520",
+          "duration": 1315.795588,
           "tolerance_met": false
         }
       ]
@@ -201,6 +201,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-11-29T17:23:49.703191",
-  "duration": 178.12623000144958
+  "end": "2021-11-30T15:52:44.957520",
+  "duration": 1315.7955877780914
 }
