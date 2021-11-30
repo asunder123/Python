@@ -73,12 +73,13 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                    t.circle(i*j*num1)
                    v=int(j/i)
                    for j in range(num1):
-                       for m in range(j):
-                        t.pencolor("green")
-                        t.forward(j)
-                        t.left(int(j/i))
-                        t.backward(j-1)
-                        j+=2
+                    for m in range(j):
+                     for k in range(m):
+                         t.pencolor("green")
+                         t.forward(k*2)
+                         t.left(60)
+                         t.backward(k*2-1)
+                         t.left(60)
                    while j<=num1-2:
                          for k in range(6):
                           t.pencolor("red")
