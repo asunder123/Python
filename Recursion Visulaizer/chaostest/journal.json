@@ -154,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-11-30T17:24:38.217877",
+  "start": "2021-12-01T15:16:28.669311",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -181,17 +181,21 @@
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
             "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 169, in fractal\n    t.pencolor(\"green\")\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2253, in pencolor\n    color = self._colorstr(args)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2697, in _colorstr\n    return self.screen._colorstr(args)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1159, in _colorstr\n    raise TurtleGraphicsError(\"bad color string: %s\" % str(color))\n",
-            "turtle.TurtleGraphicsError: bad color string: green\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 86, in fractal\n    tree(i)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 57, in tree\n    t.backward(3*j)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1658, in back\n    self._go(-distance)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1606, in _go\n    self._goto(ende)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3159, in _goto\n    screen._pointlist(self.currentLineItem),\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 754, in _pointlist\n    cl = self.cv.coords(item)\n",
+            "  File \"<string>\", line 1, in coords\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\tkinter\\__init__.py\", line 2766, in coords\n    self.tk.call((self._w, 'coords') + args))]\n",
+            "_tkinter.TclError: invalid command name \".!canvas\"\n",
             "\nDuring handling of the above exception, another exception occurred:\n\n",
-            "chaoslib.exceptions.ActivityFailed: turtle.TurtleGraphicsError: bad color string: green\n"
+            "chaoslib.exceptions.ActivityFailed: _tkinter.TclError: invalid command name \".!canvas\"\n"
           ],
-          "start": "2021-11-30T17:24:38.225417",
-          "end": "2021-11-30T17:33:38.656468",
-          "duration": 540.431051,
+          "start": "2021-12-01T15:16:28.674310",
+          "end": "2021-12-01T15:30:00.206078",
+          "duration": 811.531768,
           "tolerance_met": false
         }
       ]
@@ -201,6 +205,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-11-30T17:33:38.658389",
-  "duration": 540.4405109882355
+  "end": "2021-12-01T15:30:00.207075",
+  "duration": 811.5377643108368
 }

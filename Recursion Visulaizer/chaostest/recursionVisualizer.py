@@ -46,103 +46,22 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
         turtle.heading()
         t.forward(15)
         while i<num1:
-         t.pencolor("red")
-         #t.onclick(t.goto())
-         t.circle(i*i*i)
-         #t.seth(-i*i)
-         t.pencolor("black")
-         t.right(90)
-         #t.seth(-i*i)
-         t.circle(i*i*i)
-         #t.pencolor("green")
-         #t.forward(2.5*i)
-         #t.left(45)
-         #t.circle(i*i*i)
-         #t.seth(i*i)
-         #i+=1
-         #t.onclick(t.goto)
          for i in range(num1):
-             for j in range(i):
-              t.pencolor("white")
-              #t.forward(int(j/2*i))
-              t.left(45)
-              t.circle(i*j)
-              t.right(45)
-              if i>j:
-                   t.pencolor("orange")
-                   t.circle(i*j*num1)
-                   v=int(j/i)
-                   for j in range(num1):
-                    for m in range(j):
-                     for k in range(m):
-                         t.pencolor("green")
-                         t.forward(k*2)
-                         t.left(60)
-                         t.backward(k*2-1)
-                         t.left(60)
-                   while j<=num1-2:
-                         for k in range(6):
-                          t.pencolor("red")
-                          t.forward(k)
-                          t.left(60)
-                          t.backward(k)
-                          t.left(60)
-                          t.forward(k)
-                          v+=1
-                          j+=1
-                          break
-                   if j>num1-1:
-                     tree(j)
-                     #j-=1
-                     continue
-                   #print('Shift to squaring')
-                   #t.pencolor("green")
-                   #t.forward(j)
-                   #t.right(90)
-                   print("Position is ",t.pos())
-                   if j%5==0:
-                    for k in range(4):
-                     t.pencolor("white")
-                     t.forward(j*i*num1)
-                     t.right(90)
-              else:
-                  for j in range(i):
-                   t.pencolor("black")
-                   t.circle(j*i*num1)
-                   t.left(45)
-              #if (i%j == 0):
-               #for k in range(100):
-                #t.forward((j/i)+1)
-                #t.left(90)
-              t.right(90)
-              t.forward(j)
-              t.pencolor("green")
-         for k in range(i):
-          for j in range(k):
-            for l in range(j):
-             t.pencolor("black")
-             t.circle(j*k*l)
-             t.right(90)
-             t.seth(i*i)
-             t.pencolor("white")
-             for m in range(l):
-                 for n in range(m):
-                  t.circle(m*n**l)
-                  t.pencolor("red")
-                  #t.forward(random.int(1,n/m))
-                  t.left(90)
-         t.onclick(t.goto)
-         t.right(45)
-         #t.forward(-2*i)
-         t.circle(k*k*k)
-         t.pencolor("yellow")
-         #t.seth(-45*k*k)
-         for m in range(l):
-          for n in range(m):
-            t.circle(l*l*l)
-            t.right(45)
-            tree(m)
+              if i>10:
+               t.pencolor("orange")
+               for i in range(num1):
+                 for j in range(i):
+                  for k in range(j):
+                   t.forward(3*j)
+                   t.left(60)
+                   t.backward(3*j)
+                   t.left(60)
+                   t.forward(3*j)
+                   t.right(90)
+                   t.forward(i*2)
+        tree(num1)
         print(t.pos())
+        tree(20)
         print('tree execution complete')
         pass
 
@@ -151,7 +70,7 @@ def cycle(i:int,configuration: Configuration=None,secrets: Secrets=None)->None:
         return 
     else:
         try:
-            tree(i)
+            tree(i/2)
         except:
             print('Cycle loop exception occured')
         else:
@@ -164,20 +83,13 @@ def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None
     else:
         while i<num1:
          t.pencolor("white")   
-         cycle(i)
-         for j in range(num1):
-          t.pencolor("green")
-          t.forward(j)
-          t.right(90)
-         t.forward(int(i/num1))
-         t.right(90)
-         cycle(i+1)
-         i+=1
+         tree(i)
         print('Exit final while loop')
         print('fractal execution complete')
         pass
 val=input("Enter a num:")
 num1=int(val)
+
 def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
  try:
   while i<num1:  
