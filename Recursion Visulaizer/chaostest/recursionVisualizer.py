@@ -58,7 +58,13 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                    t.left(60)
                    t.forward(3*j)
                    t.right(90)
-                   t.forward(i*2)
+                   if k%5 == 0:
+                    for m in range(100):
+                      t.pencolor("green")
+                      t.forward(m)
+                      t.right(90)
+                      t.pencolor("orange")
+                   t.forward(2*i)
         tree(num1)
         print(t.pos())
         tree(20)
