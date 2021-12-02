@@ -154,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-12-02T05:17:46.616832",
+  "start": "2021-12-02T05:28:34.744742",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -181,18 +181,18 @@
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
             "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 92, in fractal\n    tree(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 66, in tree\n    t.pencolor(\"orange\")\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 91, in fractal\n    tree(i)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 62, in tree\n    t.pencolor(\"green\")\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2253, in pencolor\n    color = self._colorstr(args)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2697, in _colorstr\n    return self.screen._colorstr(args)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1159, in _colorstr\n    raise TurtleGraphicsError(\"bad color string: %s\" % str(color))\n",
-            "turtle.TurtleGraphicsError: bad color string: orange\n",
+            "turtle.TurtleGraphicsError: bad color string: green\n",
             "\nDuring handling of the above exception, another exception occurred:\n\n",
-            "chaoslib.exceptions.ActivityFailed: turtle.TurtleGraphicsError: bad color string: orange\n"
+            "chaoslib.exceptions.ActivityFailed: turtle.TurtleGraphicsError: bad color string: green\n"
           ],
-          "start": "2021-12-02T05:17:46.621084",
-          "end": "2021-12-02T05:25:49.730287",
-          "duration": 483.109203,
+          "start": "2021-12-02T05:28:34.748875",
+          "end": "2021-12-02T05:47:28.555513",
+          "duration": 1133.806638,
           "tolerance_met": false
         }
       ]
@@ -202,6 +202,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-12-02T05:25:49.730287",
-  "duration": 483.113454580307
+  "end": "2021-12-02T05:47:28.556519",
+  "duration": 1133.8117768764496
 }

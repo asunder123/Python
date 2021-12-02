@@ -52,12 +52,11 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                for i in range(num1):
                  for j in range(i):
                   for k in range(j):
-                   t.forward(3*j)
+                   t.forward(j*j)
                    t.left(60)
-                   t.backward(3*j)
+                   t.backward(j*j)
                    t.left(60)
-                   t.forward(3*j)
-                   t.right(90)
+                   t.forward(j*j)
                    if k%5 == 0:
                     for m in range(100):
                       t.pencolor("green")
