@@ -50,23 +50,23 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               if i>10:
                t.pencolor("orange")
                for i in range(num1):
-                 for j in range(i):
-                  for k in range(j):
-                   t.forward(j*j)
+                   t.forward(i*i)
                    t.left(60)
-                   t.backward(j*j)
+                   t.backward(i*i)
                    t.left(60)
-                   t.forward(j*j)
-                   if k%5 == 0:
+                   t.forward(i*i)
+                   if i%5 == 0:
                     for m in range(100):
                       t.pencolor("green")
                       t.forward(m)
                       t.right(90)
+                      t.pencolor("red")
+                      t.circle(20-m)
                       t.pencolor("orange")
-                   t.forward(2*i)
-        tree(num1)
+                   t.forward(int(2*i/5))
+        #tree(num1)
         print(t.pos())
-        tree(20)
+        tree(2*i)
         print('tree execution complete')
         pass
 
