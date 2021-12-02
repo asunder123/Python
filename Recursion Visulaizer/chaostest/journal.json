@@ -154,7 +154,7 @@
     ],
     "dry": false
   },
-  "start": "2021-12-02T06:42:26.487650",
+  "start": "2021-12-02T08:25:06.369298",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -181,20 +181,21 @@
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
             "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 91, in fractal\n    tree(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 62, in tree\n    t.right(90)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1679, in right\n    self._rotate(-angle)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3279, in _rotate\n    self._update()\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2661, in _update\n    self._update_data()\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2647, in _update_data\n    self.screen._incrementudc()\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1293, in _incrementudc\n    raise Terminator\n",
-            "turtle.Terminator\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 107, in fractal\n    tree(i)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 71, in tree\n    t.forward(m-i)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1638, in forward\n    self._go(distance)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1606, in _go\n    self._goto(ende)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3159, in _goto\n    screen._pointlist(self.currentLineItem),\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 754, in _pointlist\n    cl = self.cv.coords(item)\n",
+            "  File \"<string>\", line 1, in coords\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\tkinter\\__init__.py\", line 2766, in coords\n    self.tk.call((self._w, 'coords') + args))]\n",
+            "_tkinter.TclError: invalid command name \".!canvas\"\n",
             "\nDuring handling of the above exception, another exception occurred:\n\n",
-            "chaoslib.exceptions.ActivityFailed: turtle.Terminator\n"
+            "chaoslib.exceptions.ActivityFailed: _tkinter.TclError: invalid command name \".!canvas\"\n"
           ],
-          "start": "2021-12-02T06:42:26.491763",
-          "end": "2021-12-02T06:47:57.361341",
-          "duration": 330.869578,
+          "start": "2021-12-02T08:25:06.374297",
+          "end": "2021-12-02T08:53:46.027746",
+          "duration": 1719.653449,
           "tolerance_met": false
         }
       ]
@@ -204,6 +205,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-12-02T06:47:57.362356",
-  "duration": 330.87470602989197
+  "end": "2021-12-02T08:53:46.028745",
+  "duration": 1719.6594479084015
 }

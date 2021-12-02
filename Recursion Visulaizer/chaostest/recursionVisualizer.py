@@ -35,6 +35,9 @@ def setup(i: int, configuration: Configuration = None, secrets: Secrets=None)->A
         win = turtle.Screen()
         win.bgcolor("yellow")
         win.setup(height=1000,length=2000)
+        #win.listen()
+        #win.onkeypress(turtle.Turtle().set(20),"Up")
+        #win.onkeypress(turtle.Turtle().set(20),"Down")
         win.title("setup")
 
 def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
@@ -50,23 +53,36 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               if i>10:
                t.pencolor("orange")
                for i in range(num1):
-                   t.forward(i*i)
+                   t.forward(i)
                    t.left(60)
-                   t.backward(i*i)
+                   t.backward(i)
                    t.left(60)
-                   t.forward(i*i)
+                   t.forward(i)
+               for i in range(num1):
+                   win.listen()
+                   win.onkeypress(turtle.Turtle().sety(i),"Up")
+                   print("Turtle moved up by", t.pos())
+                   win.onkeypress(turtle.Turtle().sety(-i),"Down")
+                   print("Turtle moved down by",t.pos())
                    if i%5 == 0:
-                    for m in range(100):
+                    for m in range(i):
                       t.pencolor("green")
-                      t.forward(m)
-                      t.right(90)
+                      for j in range(m):
+                       t.forward(m-i)
+                       t.right(90)
                       t.pencolor("red")
-                      t.circle(20-m)
+                      t.circle(m-i)
+                      t.pencolor("white")
+                      for j in range(3):
+                       t.forward(m-i)
+                       t.right(60)
+                       t.backward(m-i)
+                       t.right(60)
                       t.pencolor("orange")
                    t.forward(int(2*i/5))
         #tree(num1)
         print(t.pos())
-        tree(2*i)
+        tree(int(2*i/5))
         print('tree execution complete')
         pass
 
