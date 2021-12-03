@@ -54,16 +54,18 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                t.pencolor("orange")
                for i in range(num1):
                    t.forward(i)
-                   t.left(30)
+                   t.left(45)
                    t.backward(i)
-                   t.left(60)
+                   t.left(45)
+                   t.forward(1)
+                   i+=1000*i
                for i in range(num1):
                    win.listen()
                    win.onkeypress(turtle.Turtle().sety(i),"Up")
                    print("Turtle moved up by", t.pos())
                    win.onkeypress(turtle.Turtle().sety(-i),"Down")
                    print("Turtle moved down by",t.pos())
-                   if i%5 == 0:
+                   if i%2 == 0:
                     for m in range(i):
                       t.pencolor("green")
                       for j in range(m):
@@ -72,7 +74,7 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                       t.pencolor("red")
                       t.circle(m-i)
                       t.pencolor("white")
-                      for j in range(m):
+                      for j in range(1):
                        t.forward(m-i)
                        t.right(60)
                        t.backward(m-i)
@@ -81,8 +83,10 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                        t.pencolor("black")
                        print('Switch to random square')
                        for m in range(l):
-                        t.forward(i*i)
+                        t.forward(random.randint(i,i*i*i))
                         t.right(90)
+                        t.pencolor("yellow")
+                        t.circle(i*(i-m))
                       t.pencolor("orange")
                    #t.forward(int(2*i/5))
         #tree(int(num1/5))
@@ -109,7 +113,7 @@ def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None
     else:
         while i<num1:
          t.pencolor("white")   
-         cycle(random.randint(int(i/2),i))
+         cycle(random.randint(int(3*i/4),int(1.5*i)))
         print('Exit final while loop')
         print('fractal execution complete')
         pass
