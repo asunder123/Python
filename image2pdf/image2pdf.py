@@ -42,7 +42,7 @@ class image2pdf:
 
 
     def save(self):
-        self.pictures[0].save('result.pdf', save_all=True, append_images=self.pictures[1:])
+        self.pictures[0].save('result.PDF', save_all=True, append_images=self.pictures[1:])
     
 
 if __name__ == "__main__":

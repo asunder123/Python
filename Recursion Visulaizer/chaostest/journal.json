@@ -27,13 +27,13 @@
         {
           "name": "test-steady-state",
           "type": "probe",
-          "tolerance": 16,
+          "tolerance": 15,
           "provider": {
             "type": "python",
             "module": "recursionVisualizer",
             "func": "steadystate",
             "arguments": {
-              "i": 16
+              "i": 15
             }
           }
         }
@@ -187,7 +187,7 @@
     ],
     "dry": false
   },
-  "start": "2021-12-03T08:08:17.365275",
+  "start": "2021-12-03T14:36:09.751205",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -198,13 +198,13 @@
           "activity": {
             "name": "test-steady-state",
             "type": "probe",
-            "tolerance": 16,
+            "tolerance": 15,
             "provider": {
               "type": "python",
               "module": "recursionVisualizer",
               "func": "steadystate",
               "arguments": {
-                "i": 16
+                "i": 15
               }
             }
           },
@@ -213,8 +213,8 @@
           "exception": [
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 115, in fractal\n    t.pencolor(\"white\")\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 33, in steadystate\n    fractal(i)\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 124, in fractal\n    t.pencolor(\"white\")\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2253, in pencolor\n    color = self._colorstr(args)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2697, in _colorstr\n    return self.screen._colorstr(args)\n",
             "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1159, in _colorstr\n    raise TurtleGraphicsError(\"bad color string: %s\" % str(color))\n",
@@ -222,9 +222,9 @@
             "\nDuring handling of the above exception, another exception occurred:\n\n",
             "chaoslib.exceptions.ActivityFailed: turtle.TurtleGraphicsError: bad color string: white\n"
           ],
-          "start": "2021-12-03T08:08:17.369448",
-          "end": "2021-12-03T08:35:33.973533",
-          "duration": 1636.604085,
+          "start": "2021-12-03T14:36:09.756456",
+          "end": "2021-12-03T14:36:58.297511",
+          "duration": 48.541055,
           "tolerance_met": false
         }
       ]
@@ -234,6 +234,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-12-03T08:35:33.974544",
-  "duration": 1636.6092684268951
+  "end": "2021-12-03T14:36:58.298490",
+  "duration": 48.547285079956055
 }

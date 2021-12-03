@@ -4,11 +4,16 @@ import sys
 import traceback
 import turtle
 import random
+#import numpy as np
+#import cv2
+#import pyautogui
 from typing import Any
 from logzero import logger 
 from chaoslib.types import Configuration, Secrets,Activity
 from chaoslib.exceptions import ActivityFailed, InvalidActivity
 from turtle import *
+
+
 
 __all__ = ["cycle","tree","fractal","rec","line","steadystate"]
 t = turtle.Turtle()
@@ -22,7 +27,7 @@ win.setup(500,500)
 win.title("setup")
 
 def steadystate(i: int, configuration: Configuration = None, secrets: Secrets=None)->Any:
-    if i<15:
+    if i<10:
         return
     else: 
         fractal(i)
@@ -54,11 +59,15 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                t.pencolor("orange")
                for i in range(num1):
                    t.forward(i)
-                   t.left(45)
+                   t.left(60)
                    t.backward(i)
-                   t.left(45)
-                   t.forward(1)
-                   i+=1000*i
+                   t.left(60)
+                   #t.forward(random.randint(int(i*i/2),i*i))
+               for j in range(i):
+                   t.pencolor("green")
+                   t.forward(j)
+                   t.right(90)
+                   i+=i
                for i in range(num1):
                    win.listen()
                    win.onkeypress(turtle.Turtle().sety(i),"Up")
@@ -69,29 +78,29 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                     for m in range(i):
                       t.pencolor("green")
                       for j in range(m):
-                       t.forward(m-i)
+                       t.forward(j)
                        t.right(90)
                       t.pencolor("red")
                       t.circle(m-i)
                       t.pencolor("white")
-                      for j in range(1):
+                      for j in range(m):
                        t.forward(m-i)
                        t.right(60)
                        t.backward(m-i)
                        t.right(60)
                        t.forward(m-i)
-                       t.pencolor("black")
                        print('Switch to random square')
                        for m in range(l):
-                        t.forward(random.randint(i,i*i*i))
+                        t.pencolor("black")
+                        t.forward(l*l)
                         t.right(90)
                         t.pencolor("yellow")
-                        t.circle(i*(i-m))
+                        t.circle(l-m)
                       t.pencolor("orange")
                    #t.forward(int(2*i/5))
-        #tree(int(num1/5))
+        tree(int(num1/5))
         print(t.pos())
-        tree(int(2*i/5))
+        #tree(int(2*i/5))
         print('tree execution complete')
         pass
 
@@ -120,6 +129,8 @@ def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None
 val=input("Enter a num:")
 num1=int(val)
 
+
+
 def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
  try:
   while i<num1:  
@@ -127,6 +138,9 @@ def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
    #t.backward(num1)
    fractal(i)
    i+=1
+   #image = pyautogui.screenshot()
+   #image = cv2.cvtColor(np.array(image),cv2.COLOR_RGB2BGR)
+   #cv2.imwrite("image1.png", image)
    #t.onclick(t.goto)
    #t.left(num1)
    #t.right(num1)
@@ -137,3 +151,6 @@ def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
   pass
 print('Simulation begins')
 rec(num1)
+print('Take screenshot')
+
+#turtle.getscreen().getcanvas().postscript(file='Image.eps', height=10000,width=10000)

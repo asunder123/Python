@@ -24,13 +24,13 @@
                           {
                         "name": "test-steady-state",
                         "type": "probe",
-                        "tolerance":16,
+                        "tolerance":15,
 			"provider": {
                                 "type": "python",
                                 "module": "recursionVisualizer",
                                 "func": "steadystate",
                                 "arguments": {
-                                        "i":16
+                                        "i":15
                                 }
                         }
                 }]
