@@ -144,9 +144,9 @@ _tg_turtle_functions = ['back', 'backward', 'begin_fill', 'begin_poly', 'bk',
 _tg_utilities = ['write_docstringdict', 'done']
 
 __all__ = [(_tg_classes + _tg_screen_functions + _tg_turtle_functions +
-           _tg_utilities + ['Terminator']),"incrementudc","right","init","update","config_dict","readconfig","tracer","rotate","ondrag","onscreenclick","onkeyrelease"] # + _math_functions+#
+           _tg_utilities + ['Terminator']),"incrementudc","right","init","update","config_dict","readconfig","tracer","rotate","ondrag","onscreenclick","onkeyrelease","go","goto","pointlist","forward","update"] # + _math_functions+#
 
-_all_ = ["run","incrementudc","init","update"]
+_all_ = ["run","incrementudc","init","update","goto","go","pointlist","forward","update"]
 
 _alias_list = ['addshape', 'backward', 'bk', 'fd', 'ht', 'lt', 'pd', 'pos',
                'pu', 'rt', 'seth', 'setpos', 'setposition', 'st',
@@ -755,17 +755,18 @@ class TurtleScreenBase(object):
         """
         return self.cv.type(item)
 
-    def _pointlist(self, item):
+    def pointlist(self, item, configuration: Configuration=None,secrets: Secrets=None)->None:
         """returns list of coordinate-pairs of points of item
         Example (for insiders):
         >>> from turtle import *
-        >>> getscreen()._pointlist(getturtle().turtle._item)
+        >>> getscreen().pointlist(getturtle().turtle.item)
         [(0.0, 9.9999999999999982), (0.0, -9.9999999999999982),
         (9.9999999999999982, 0.0)]
         >>> """
         cl = self.cv.coords(item)
         pl = [(cl[i], -cl[i+1]) for i in range(0, len(cl), 2)]
         return  pl
+        pass
 
     def _setscrollregion(self, srx1, sry1, srx2, sry2):
         self.cv.config(scrollregion=(srx1, sry1, srx2, sry2))
@@ -1309,7 +1310,7 @@ class TurtleScreen(TurtleScreenBase):
             self._updatecounter %= self._tracing
         pass
 
-    def update(self):
+    def update(self,configuration: Configuration=None,secrets: Secrets=None)->None:
         """Perform a TurtleScreen update.
         """
         tracing = self._tracing
@@ -1319,7 +1320,8 @@ class TurtleScreen(TurtleScreenBase):
             t._drawturtle()
         self._tracing = tracing
         self._update()
-
+        pass
+ 
     def window_width(self):
         """ Return the width of the turtle window.
 
@@ -1614,21 +1616,23 @@ class TNavigator(object):
         """
         self._setDegreesPerAU(2*math.pi)
 
-    def _go(self, distance):
+    def go(self,distance,configuration: Configuration=None,secrets: Secrets=None)->None:
         """move turtle forward by specified distance"""
-        ende = self._position + self._orient * distance
-        self._goto(ende)
+        ende = self.position + self.orient * distance
+        self.goto(ende)
+        pass
 
     def rotate(self, angle):
         """Turn turtle counterclockwise by specified angle if angle > 0."""
         angle *= self._degreesPerAU
         self._orient = self._orient.rotate(angle)
 
-    def _goto(self, end):
+    def goto(self, end, configuration: Configuration=None,secrets: Secrets=None)-> None:
         """move turtle to position end."""
-        self._position = end
+        self.position = end
+        pass
 
-    def forward(self, distance):
+    def forward(self, distance, configuration: Configuration=None,secrets: Secrets=None)->None:
         """Move the turtle forward by the specified distance.
 
         Aliases: forward | fd
@@ -1650,6 +1654,7 @@ class TNavigator(object):
         (-50.00,0.00)
         """
         self._go(distance)
+        pass
 
     def back(self, distance):
         """Move the turtle backward by distance.
@@ -3157,7 +3162,7 @@ class RawTurtle(TPen, TNavigator):
             self._clearstamp(item)
         self._update()
 
-    def _goto(self, end):
+    def _goto(self, end,configuration: Configuration=None,secrets: Secrets=None)->None:
         """Move the pen to the point end, thereby drawing a line
         if pen is down. All other methods for turtle movement depend
         on this one.
@@ -3209,6 +3214,7 @@ class RawTurtle(TPen, TNavigator):
                                        # of life, the universe and everything
             self._newLine()
         self._update() #count=True)
+        pass
 
     def _undogoto(self, entry):
         """Reverse a _goto. Used for undo()

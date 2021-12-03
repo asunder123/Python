@@ -27,13 +27,13 @@
         {
           "name": "test-steady-state",
           "type": "probe",
-          "tolerance": 15,
+          "tolerance": 20,
           "provider": {
             "type": "python",
             "module": "recursionVisualizer",
             "func": "steadystate",
             "arguments": {
-              "i": 15
+              "i": 20
             }
           }
         }
@@ -49,6 +49,39 @@
           "func": "readconfig",
           "arguments": {
             "cfgdict": "default.cfg"
+          }
+        }
+      },
+      {
+        "name": "test-forward-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "forward",
+          "arguments": {
+            "distance": 10
+          }
+        }
+      },
+      {
+        "name": "test-update-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "update"
+        }
+      },
+      {
+        "name": "test-goto-module",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "turtletest",
+          "func": "goto",
+          "arguments": {
+            "x": 10
           }
         }
       },
@@ -154,7 +187,7 @@
     ],
     "dry": false
   },
-  "start": "2021-12-02T08:25:06.369298",
+  "start": "2021-12-03T05:37:13.885685",
   "status": "failed",
   "deviated": false,
   "steady_states": {
@@ -165,13 +198,13 @@
           "activity": {
             "name": "test-steady-state",
             "type": "probe",
-            "tolerance": 15,
+            "tolerance": 20,
             "provider": {
               "type": "python",
               "module": "recursionVisualizer",
               "func": "steadystate",
               "arguments": {
-                "i": 15
+                "i": 20
               }
             }
           },
@@ -181,21 +214,17 @@
             "Traceback (most recent call last):\n",
             "  File \"C:\\Users\\asunder\\.venvs\\chaostk\\lib\\site-packages\\chaoslib\\provider\\python.py\", line 55, in run_python_activity\n    return func(**arguments)\n",
             "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 28, in steadystate\n    fractal(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 107, in fractal\n    tree(i)\n",
-            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 71, in tree\n    t.forward(m-i)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1638, in forward\n    self._go(distance)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1606, in _go\n    self._goto(ende)\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 3159, in _goto\n    screen._pointlist(self.currentLineItem),\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 754, in _pointlist\n    cl = self.cv.coords(item)\n",
-            "  File \"<string>\", line 1, in coords\n",
-            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\tkinter\\__init__.py\", line 2766, in coords\n    self.tk.call((self._w, 'coords') + args))]\n",
-            "_tkinter.TclError: invalid command name \".!canvas\"\n",
+            "  File \"C:\\Users\\asunder\\Python\\Recursion Visulaizer\\chaostest\\recursionVisualizer.py\", line 111, in fractal\n    t.pencolor(\"white\")\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2253, in pencolor\n    color = self._colorstr(args)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 2697, in _colorstr\n    return self.screen._colorstr(args)\n",
+            "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\\lib\\turtle.py\", line 1159, in _colorstr\n    raise TurtleGraphicsError(\"bad color string: %s\" % str(color))\n",
+            "turtle.TurtleGraphicsError: bad color string: white\n",
             "\nDuring handling of the above exception, another exception occurred:\n\n",
-            "chaoslib.exceptions.ActivityFailed: _tkinter.TclError: invalid command name \".!canvas\"\n"
+            "chaoslib.exceptions.ActivityFailed: turtle.TurtleGraphicsError: bad color string: white\n"
           ],
-          "start": "2021-12-02T08:25:06.374297",
-          "end": "2021-12-02T08:53:46.027746",
-          "duration": 1719.653449,
+          "start": "2021-12-03T05:37:13.901273",
+          "end": "2021-12-03T05:52:23.445728",
+          "duration": 909.544455,
           "tolerance_met": false
         }
       ]
@@ -205,6 +234,6 @@
   },
   "run": [],
   "rollbacks": [],
-  "end": "2021-12-02T08:53:46.028745",
-  "duration": 1719.6594479084015
+  "end": "2021-12-03T05:52:23.446729",
+  "duration": 909.5610439777374
 }

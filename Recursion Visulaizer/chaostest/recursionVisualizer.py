@@ -54,10 +54,9 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                t.pencolor("orange")
                for i in range(num1):
                    t.forward(i)
-                   t.left(60)
+                   t.left(30)
                    t.backward(i)
                    t.left(60)
-                   t.forward(i)
                for i in range(num1):
                    win.listen()
                    win.onkeypress(turtle.Turtle().sety(i),"Up")
@@ -73,14 +72,20 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                       t.pencolor("red")
                       t.circle(m-i)
                       t.pencolor("white")
-                      for j in range(3):
+                      for j in range(m):
                        t.forward(m-i)
                        t.right(60)
                        t.backward(m-i)
                        t.right(60)
+                       t.forward(m-i)
+                       t.pencolor("black")
+                       print('Switch to random square')
+                       for m in range(l):
+                        t.forward(i*i)
+                        t.right(90)
                       t.pencolor("orange")
-                   t.forward(int(2*i/5))
-        #tree(num1)
+                   #t.forward(int(2*i/5))
+        #tree(int(num1/5))
         print(t.pos())
         tree(int(2*i/5))
         print('tree execution complete')
@@ -91,7 +96,7 @@ def cycle(i:int,configuration: Configuration=None,secrets: Secrets=None)->None:
         return 
     else:
         try:
-            tree(i/2)
+            tree(i)
         except:
             print('Cycle loop exception occured')
         else:
@@ -104,7 +109,7 @@ def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None
     else:
         while i<num1:
          t.pencolor("white")   
-         tree(i)
+         cycle(random.randint(int(i/2),i))
         print('Exit final while loop')
         print('fractal execution complete')
         pass

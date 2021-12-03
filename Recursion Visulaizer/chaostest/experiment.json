@@ -24,13 +24,13 @@
                           {
                         "name": "test-steady-state",
                         "type": "probe",
-                        "tolerance":15,
+                        "tolerance":20,
 			"provider": {
                                 "type": "python",
                                 "module": "recursionVisualizer",
                                 "func": "steadystate",
                                 "arguments": {
-                                        "i":15
+                                        "i":20
                                 }
                         }
                 }]
@@ -51,6 +51,48 @@
                                 }
                         }
                 },
+		   {
+                        "name": "test-forward-module",
+                        "type": "action",
+                        "provider": {
+                                "type": "python",
+                                "module": "turtletest",
+                                "func": "forward",
+                                "arguments": {
+
+                                        "distance":10
+                                }
+                        }
+                },
+		 {
+                        "name": "test-update-module",
+                        "type": "action",
+                        "provider": {
+                                "type": "python",
+                                "module": "turtletest",
+                                "func": "update"
+                        }
+                },
+		{
+                 "name": "test-goto-module",
+		 "type": "action",
+		 "provider": {
+                        "type": "python",
+			"module": "turtletest",
+                        "func": "goto",
+                        "arguments":{
+                        
+                         "x" : 10
+			}
+
+
+		        }
+
+
+
+
+
+		},
 		{
                         "name": "test-configdict-module",
                         "type": "action",
