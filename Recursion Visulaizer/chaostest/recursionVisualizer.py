@@ -30,19 +30,22 @@ def steadystate(i: int, configuration: Configuration = None, secrets: Secrets=No
     if i<10:
         return
     else: 
-        fractal(i)
+        try:
+            return rec(i)
+        except:
+              print('Recursion Exception occured')
 
 
 def setup(i: int, configuration: Configuration = None, secrets: Secrets=None)->Any:
-    if i<15:
+    if i<10:
        return 
     else:
         win = turtle.Screen()
         win.bgcolor("yellow")
-        win.setup(height=1000,length=2000)
-        #win.listen()
-        #win.onkeypress(turtle.Turtle().set(20),"Up")
-        #win.onkeypress(turtle.Turtle().set(20),"Down")
+        win.setup(height=10000,length=20000)
+        win.listen()
+        win.onkeypress(turtle.Turtle().set(20),"Up")
+        win.onkeypress(turtle.Turtle().set(20),"Down")
         win.title("setup")
 
 def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
@@ -58,22 +61,23 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               if i>10:
                t.pencolor("orange")
                for i in range(num1):
-                   t.forward(i)
-                   t.left(60)
-                   t.backward(i)
-                   t.left(60)
-                   #t.forward(random.randint(int(i*i/2),i*i))
+                for j in range(i):
+                    t.forward(j-4)
+                    t.left(60)
+                    t.backward(j-4)
+                    t.left(60)
+                   #t.forward(random.randint(int(i*i/9),i*i))      
                for j in range(i):
                    t.pencolor("green")
                    t.forward(j)
                    t.right(90)
                    i+=i
                for i in range(num1):
-                   win.listen()
-                   win.onkeypress(turtle.Turtle().sety(i),"Up")
-                   print("Turtle moved up by", t.pos())
-                   win.onkeypress(turtle.Turtle().sety(-i),"Down")
-                   print("Turtle moved down by",t.pos())
+                   #win.listen()
+                   #win.onkeypress(turtle.Turtle().sety(i),"Up")
+                   #print("Turtle moved up by", t.pos())
+                   #win.onkeypress(turtle.Turtle().sety(-i),"Down")
+                   #print("Turtle moved down by",t.pos())
                    if i%2 == 0:
                     for m in range(i):
                       t.pencolor("green")
@@ -81,12 +85,14 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                        t.forward(j)
                        t.right(90)
                       t.pencolor("red")
-                      t.circle(m-i)
+                      t.circle(random.randint(i,m-i))
+                      print('Radius of circle is ',random.randint(i,m-i))
                       t.pencolor("white")
                       for j in range(m):
                        t.forward(m-i)
                        t.right(60)
-                       t.backward(m-i)
+                       t.backward(random.randint(m,m-i))
+                       print("Position shift at random",t.pos())
                        t.right(60)
                        t.forward(m-i)
                        print('Switch to random square')
@@ -122,7 +128,9 @@ def fractal(i:int,configuration: Configuration=None,secrets: Secrets=None)->None
     else:
         while i<num1:
          t.pencolor("white")   
-         cycle(random.randint(int(3*i/4),int(1.5*i)))
+         cycle(random.randint(int(i/4),int(1.5*i)))
+         cycle(i)
+         cycle(random.randint(int(i/4),int(1.5*i)))
         print('Exit final while loop')
         print('fractal execution complete')
         pass
@@ -152,5 +160,4 @@ def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
 print('Simulation begins')
 rec(num1)
 print('Take screenshot')
-
-#turtle.getscreen().getcanvas().postscript(file='Image.eps', height=10000,width=10000)
+turtle.getscreen().getcanvas().postscript(file='Image.png', height=10000,width=10000)
