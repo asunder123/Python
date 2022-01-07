@@ -23,7 +23,7 @@ t.speed(1000*num)
 t.left(num)
 win = turtle.Screen()
 win.bgcolor("blue")
-win.setup(500,500)
+win.setup(1500,500)
 win.title("setup")
 
 def steadystate(i: int, configuration: Configuration = None, secrets: Secrets=None)->Any:
@@ -61,17 +61,18 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
               if i>10:
                t.pencolor("orange")
                for i in range(num1):
-                for j in range(i):
-                    t.forward(j-4)
+                    t.forward(i-4)
                     t.left(60)
-                    t.backward(j-4)
+                    t.backward(i-4)
                     t.left(60)
+                    i+=5
                    #t.forward(random.randint(int(i*i/9),i*i))      
                for j in range(i):
+                 for l in range(j):
                    t.pencolor("green")
-                   t.forward(j)
-                   t.right(90)
-                   i+=i
+                   t.forward(l)
+                   t.right(90*l)
+                   l+=l
                for i in range(num1):
                    #win.listen()
                    #win.onkeypress(turtle.Turtle().sety(i),"Up")
@@ -104,7 +105,7 @@ def tree(i: int,configuration: Configuration = None,secrets: Secrets=None)->Any:
                         t.circle(l-m)
                       t.pencolor("orange")
                    #t.forward(int(2*i/5))
-        tree(int(num1/5))
+        i#tree(int(num1/2))
         print(t.pos())
         #tree(int(2*i/5))
         print('tree execution complete')
@@ -138,13 +139,37 @@ val=input("Enter a num:")
 num1=int(val)
 
 
+def collatz(num):
+    size=5
+    while num != 1:
+        if num % 2:
+            num = num*3+1
+            t.pencolor("green")
+            for j in range(num):
+             t.circle(num)
+             t.forward(num)
+             t.right(90)
+        else:
+            num = num // 2
+        t.pencolor("orange")
+        turtle.write(num,font=("Arial",size*3,"bold"))
+        for j in range(num):
+         t.circle(num)
+         t.forward(num)
+         t.right(90)
+        for i in range(num):
+         turtle.speed(i*size)
+         turtle.forward(i*size)
+         t.pencolor("green")
+         turtle.right(90)
+
 
 def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
  try:
   while i<num1:  
    #t.right(num1)
    #t.backward(num1)
-   fractal(i)
+   collatz(i)
    i+=1
    #image = pyautogui.screenshot()
    #image = cv2.cvtColor(np.array(image),cv2.COLOR_RGB2BGR)
@@ -157,7 +182,7 @@ def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
   turtle.done()
   print('Simulation complete')
   pass
-print('Simulation begins')
-rec(num1)
-print('Take screenshot')
-turtle.getscreen().getcanvas().postscript(file='Image.png', height=10000,width=10000)
+#print('Simulation begins')
+collatz(num1)
+#print('Take screenshot')
+#turtle.getscreen().getcanvas().postscript(file='Image.png', height=10000,width=10000)
