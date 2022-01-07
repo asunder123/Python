@@ -4,6 +4,7 @@ import sys
 import traceback
 import turtle
 import random
+import wx
 #import numpy as np
 #import cv2
 #import pyautogui
@@ -184,5 +185,14 @@ def rec(i:int,configuration: Configuration=None,secrets: Secrets=None)->Any:
   pass
 #print('Simulation begins')
 collatz(num1)
-#print('Take screenshot')
-#turtle.getscreen().getcanvas().postscript(file='Image.png', height=10000,width=10000)
+print('Take screenshot')
+#sc=turtle.getscreen().getcanvas().postscript(file='Collatz.svg')
+#print(sc)
+app = wx.App()
+screen = wx.ScreenDC()
+size = screen.GetSize()
+bmp = wx.Bitmap(size[0], size[1])
+mem = wx.MemoryDC(bmp)
+mem.Blit(0, 0, size[0], size[1], screen, 0, 0)
+del mem  # Release bitmap
+bmp.SaveFile('Collatz.png', wx.BITMAP_TYPE_PNG)

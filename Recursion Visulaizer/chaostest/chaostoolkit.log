@@ -8328,3 +8328,47 @@
 [36m[2022-01-03 00:29:21 DEBUG] [secret:75][39m Loading secrets...
 [36m[2022-01-03 00:29:21 DEBUG] [secret:92][39m Secrets loaded
 [36m[2022-01-03 00:29:25 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-01-07 15:31:18 DEBUG] [cli:103][39m ###############################################################################
+[36m[2022-01-07 15:31:18 DEBUG] [cli:104][39m Running command 'run'
+[36m[2022-01-07 15:31:18 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[33m[2022-01-07 15:31:19 WARNING] [check:33][39m 
+    There is a new version (1.11.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2022-01-07 15:31:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2022-01-07 15:31:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2022-01-07 15:31:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2022-01-07 15:31:19 DEBUG] [caching:35][39m Cached 12 activities
+[32m[2022-01-07 15:31:19 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2022-01-07 15:31:19 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2022-01-07 15:31:19 DEBUG] [secret:75][39m Loading secrets...
+[36m[2022-01-07 15:31:19 DEBUG] [secret:92][39m Secrets loaded
+[36m[2022-01-07 15:31:19 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2022-01-07 15:31:19 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'test-steady-state'
+[36m[2022-01-07 15:31:19 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'test-steady-state'
+[36m[2022-01-07 15:31:31 DEBUG] [cli:103][39m ###############################################################################
+[36m[2022-01-07 15:31:31 DEBUG] [cli:104][39m Running command 'run'
+[36m[2022-01-07 15:31:31 DEBUG] [cli:108][39m Using settings file 'C:\Users\asunder\.chaostoolkit\settings.yaml'
+[33m[2022-01-07 15:31:32 WARNING] [check:33][39m 
+    There is a new version (1.11.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2022-01-07 15:31:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2022-01-07 15:31:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2022-01-07 15:31:32 DEBUG] [caching:25][39m Building activity cache...
+[36m[2022-01-07 15:31:32 DEBUG] [caching:35][39m Cached 12 activities
+[32m[2022-01-07 15:31:32 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2022-01-07 15:31:32 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2022-01-07 15:31:32 DEBUG] [secret:75][39m Loading secrets...
+[36m[2022-01-07 15:31:32 DEBUG] [secret:92][39m Secrets loaded
+[36m[2022-01-07 15:31:32 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2022-01-07 15:31:32 ERROR] [cli:248][39m could not find Python module 'recursionVisualizer' in activity 'test-steady-state'
+[36m[2022-01-07 15:31:32 DEBUG] [cli:249][39m could not find Python module 'recursionVisualizer' in activity 'test-steady-state'
